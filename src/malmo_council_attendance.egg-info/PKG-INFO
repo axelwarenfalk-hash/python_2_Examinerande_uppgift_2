@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: malmo-council-attendance
+Version: 0.1.0
+Summary: Tools for analyzing Malmö municipal council meeting attendance
+Requires-Python: >=3.10

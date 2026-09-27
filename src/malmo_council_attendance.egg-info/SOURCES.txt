@@ -1,0 +1,7 @@
+pyproject.toml
+src/malmo_council_attendance/__init__.py
+src/malmo_council_attendance/__main__.py
+src/malmo_council_attendance.egg-info/PKG-INFO
+src/malmo_council_attendance.egg-info/SOURCES.txt
+src/malmo_council_attendance.egg-info/dependency_links.txt
+src/malmo_council_attendance.egg-info/top_level.txt
