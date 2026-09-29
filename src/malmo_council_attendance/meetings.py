@@ -1,15 +1,11 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 from urllib.parse import urljoin
-import requests
-from .io import (
-    get_page_html
-)
+import logging
 
+logger = logging.getLogger(__name__)
 
-
-
-def find_meeting_links(html, base_url):
+def find_meeting_urls(html: BeautifulSoup, base_url: str) -> pd.DataFrame:
 
     links = html.find_all("a", class_="accessible-table-cell")
 
@@ -19,7 +15,7 @@ def find_meeting_links(html, base_url):
         href = link.get("href")
         aria_label = link.get("aria-label")
         
-        if href is not None and aria_label is not None:
+        if isinstance(href, str) and isinstance(aria_label, str):
             meetings[aria_label] = urljoin(base_url, href)
 
     meetings_df = pd.DataFrame(list(meetings.items()), columns=["date", "url"])
@@ -32,20 +28,15 @@ def find_meeting_links(html, base_url):
     return meetings_df
 
 
-def get_pdf_link(html):
+def find_pdf_url(html: BeautifulSoup) -> str | None:
 
-    protocol_pdf = html.find_all(
-    'a',
-    id = 'openProtocol'
-    )
+    pdf_url_a_tag = html.find_all('a', id = 'openProtocol')
+    pdf_url = pdf_url_a_tag[0].get("href")
 
-    protocol_href = protocol_pdf[0].get("href")
+    if not isinstance(pdf_url, str):
+        return None
+    
+    if pdf_url.startswith('javascript:'):
+        return None
 
-    return protocol_href
-
-
-def find_pdf_links(url):
-    html = get_page_html(url)
-    link = get_pdf_link(html)
-    print(link)
-    return link
+    return pdf_url

@@ -5,10 +5,10 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def make_all_members_dataframe(json_data):
-    all_members_df = pd.json_normalize(json_data["Items"], sep="_")
+def make_all_representatives_dataframe(json_data: dict) -> pd.DataFrame:
+    all_representatives_df = pd.json_normalize(json_data["Items"], sep="_")
 
-    all_members_df = all_members_df[
+    all_representatives_df = all_representatives_df[
         [
             'Id',
             'Name',
@@ -17,18 +17,18 @@ def make_all_members_dataframe(json_data):
         ]
     ]
 
-    all_members_df = all_members_df.rename(columns={
+    all_representatives_df = all_representatives_df.rename(columns={
         'Name': 'name',
         'Id': 'representative_id',
         'PoliticalParty_Name': 'political_party',
         'PoliticalParty_Id': 'political_party_id'
     })
 
-    logger.info("Normaliserade %d ledamöter", len(all_members_df))
-    return all_members_df
+    logger.info("Normaliserade %d personer", len(all_representatives_df))
+    return all_representatives_df
 
 
-def make_all_roles_dataframe(json_data):
+def make_all_roles_dataframe(json_data: list) -> pd.DataFrame:
     all_roles_df = pd.json_normalize(json_data, sep="_")
 
     all_roles_df = all_roles_df[
@@ -50,14 +50,17 @@ def make_all_roles_dataframe(json_data):
         'Number': 'council_number',
         'State': 'state'
 
-    })  
+    })
+    
+    all_roles_df["date_from"] = pd.to_datetime(all_roles_df["date_from"])
+    all_roles_df["date_to"] = pd.to_datetime(all_roles_df["date_to"])
 
     logger.info("Normaliserade %d rollrader", len(all_roles_df))
     return all_roles_df
 
 
-def merge_all_members_with_all_roles(members_df, roles_df):
-    merged_df = members_df.merge(
+def merge_all_representatives_with_all_roles(df_all_representatives, roles_df):
+    merged_df = df_all_representatives.merge(
         roles_df,
         on='representative_id',
         how='left'
@@ -65,20 +68,21 @@ def merge_all_members_with_all_roles(members_df, roles_df):
 
     logger.info(
         "Slog ihop ledamöter och roller: %d personer, %d rollrader, %d resultat",
-        len(members_df),
+        len(df_all_representatives),
         len(roles_df),
         len(merged_df),
     )
     return merged_df
 
 
-def separate_members_from_replacements(df_all_members):
+def separate_members_from_replacements(df_all_representatives: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
 
-    is_member = df_all_members["council_number"].between(1, 61)
+    is_member = df_all_representatives["council_number"].between(1, 61)
 
-    members_df = df_all_members.loc[is_member].copy()
+    members_df = df_all_representatives.loc[is_member].copy()
     members_df = members_df.sort_values("council_number")
-    replacements_df = df_all_members.loc[~is_member].copy()
+
+    replacements_df = df_all_representatives.loc[~is_member].copy()
     replacements_df = replacements_df.sort_values("council_number")
 
     logger.info(
