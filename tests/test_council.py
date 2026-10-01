@@ -3,13 +3,13 @@ import pytest
 from unittest.mock import patch
 
 from malmo_council_attendance.council import (
-    make_all_members_dataframe,
+    make_all_representatives_dataframe,
     make_all_roles_dataframe,
-    merge_all_members_with_all_roles,
+    merge_all_representatives_with_all_roles,
 )
 
 
-def test_make_all_members_dataframe_normalizes_and_selects_member_columns():
+def test_make_all_representatives_dataframe_normalizes_and_selects_member_columns():
     json_data = {
         "Items": [
             {
@@ -22,7 +22,7 @@ def test_make_all_members_dataframe_normalizes_and_selects_member_columns():
     }
 
     with patch("malmo_council_attendance.council.logger.info") as mock_info:
-        result = make_all_members_dataframe(json_data)
+        result = make_all_representatives_dataframe(json_data)
 
     expected = pd.DataFrame(
         [
@@ -35,12 +35,12 @@ def test_make_all_members_dataframe_normalizes_and_selects_member_columns():
         ]
     )
     pd.testing.assert_frame_equal(result, expected)
-    mock_info.assert_called_once_with("Normaliserade %d ledamöter", 1)
+    mock_info.assert_called_once_with("Normaliserade %d personer", 1)
 
 
-def test_make_all_members_dataframe_returns_empty_frame_with_expected_columns():
+def test_make_all_representatives_dataframe_returns_empty_frame_with_expected_columns():
     with pytest.raises(KeyError):
-        make_all_members_dataframe({"Items": []})
+        make_all_representatives_dataframe({"Items": []})
 
 
 def test_make_all_roles_dataframe_selects_role_columns():
@@ -72,6 +72,8 @@ def test_make_all_roles_dataframe_selects_role_columns():
             }
         ]
     )
+    expected["date_from"] = pd.to_datetime(expected["date_from"])
+    expected["date_to"] = pd.to_datetime(expected["date_to"])
     pd.testing.assert_frame_equal(result, expected)
     mock_info.assert_called_once_with("Normaliserade %d rollrader", 1)
 
@@ -81,7 +83,7 @@ def test_make_all_roles_dataframe_raises_key_error_for_empty_input():
         make_all_roles_dataframe([])
 
 
-def test_merge_all_members_with_all_roles_left_merges_on_representative_id():
+def test_merge_all_representatives_with_all_roles_left_merges_on_representative_id():
     members_df = pd.DataFrame(
         [
             {
@@ -120,7 +122,7 @@ def test_merge_all_members_with_all_roles_left_merges_on_representative_id():
     )
 
     with patch("malmo_council_attendance.council.logger.info") as mock_info:
-        result = merge_all_members_with_all_roles(members_df, roles_df)
+        result = merge_all_representatives_with_all_roles(members_df, roles_df)
 
     expected_matches = pd.DataFrame(
         [
@@ -164,13 +166,13 @@ def test_merge_all_members_with_all_roles_left_merges_on_representative_id():
     )
 
 
-def test_merge_all_members_with_all_roles_keeps_members_when_roles_are_empty():
+def test_merge_all_representatives_with_all_roles_keeps_members_when_roles_are_empty():
     members_df = pd.DataFrame(
         [{"representative_id": 42, "name": "Testperson"}]
     )
     roles_df = pd.DataFrame(columns=["representative_id", "role"])
 
-    result = merge_all_members_with_all_roles(members_df, roles_df)
+    result = merge_all_representatives_with_all_roles(members_df, roles_df)
 
     assert result[["representative_id", "name"]].to_dict("records") == [
         {"representative_id": 42, "name": "Testperson"}

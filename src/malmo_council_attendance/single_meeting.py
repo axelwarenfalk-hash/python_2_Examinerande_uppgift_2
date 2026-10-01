@@ -1,10 +1,19 @@
+"""Läs ett mötesprotokoll och tolka paragrafer, ledamöter och ersättningar."""
+
+from pathlib import Path
+from typing import Any
+
 import pdfplumber
+from pdfplumber.page import Page
 import re
 import logging
+
+from .io import read_json, save_json
 
 logger = logging.getLogger(__name__)
 
 def split_first_member(member: str) -> tuple[dict[str, str | None], str]:
+    """Dela första personens namn, parti och eventuell titel från resten av raden."""
 
     name, rest = member.strip().split("(", 1)
     name = name.strip()
@@ -32,7 +41,7 @@ def paragraph_interval(paragraph: str) -> list[int] | None:
     '''
     Tar en eller flera paragrafintevall i en sträng och returnerar en lista med paragraferna.
     ex:
-    '§§56-59, §§62-65' --> [56, 57, 58, 59, 62, 63, 65]
+    '§§56-59, §§62-65' --> [56, 57, 58, 59, 62, 63, 64, 65]
     '''
 
     if '§' not in paragraph:
@@ -40,8 +49,11 @@ def paragraph_interval(paragraph: str) -> list[int] | None:
 
     paragraph = paragraph.replace('–', '-')
     # Närvaro under delpunkter räknas som närvaro under hela paragrafen.
-    paragraph = re.sub(r"\(\s*p\.?\s*\d[\d\s,\-]*\)", "", paragraph, flags=re.IGNORECASE)
-    paragraph = paragraph.replace('§', '').strip()
+    paragraph = re.sub(r"\(\s*(?:p\.?|beslutsgrupp)\s*\d[\d\s,\-]*\)", "", paragraph, flags=re.IGNORECASE)
+    # Ett nytt paragraftecken efter ett nummer kan ersätta ett komma.
+    paragraph = re.sub(r"(?<=\d)\s*(?=§)", ", ", paragraph)
+    # Ett avslutande komma före "ersätter" hör inte till paragrafnumret.
+    paragraph = paragraph.replace('§', '').strip(' ,')
     paragraphs = paragraph.split(',')
 
     expanded = []
@@ -58,13 +70,33 @@ def paragraph_interval(paragraph: str) -> list[int] | None:
     return expanded
 
 
-def get_text_from_pdf(pdf_path) -> list[str] | None:
+def remove_page_number(page: Page) -> Page:
+    """Filtrera bort sidans eget nummer i övre högra hörnet före textutvinning."""
+    # Ta bara bort sidans eget nummer i det övre högra hörnet.
+    for word in page.extract_words():
+        if (
+            word["text"] == str(page.page_number)
+            and word["x0"] > page.width * 0.85
+            and word["bottom"] < 65
+        ):
+            return page.filter(
+                lambda obj: not (
+                    obj["object_type"] == "char"
+                    and word["x0"] <= obj["x0"] < word["x1"]
+                    and word["top"] <= obj["top"] < word["bottom"]
+                )
+            )
+    return page
+
+
+def get_text_from_pdf(pdf_path: Path) -> list[str] | None:
+    """Läs PDF-rader; returnera None om närvarodelen innehåller oläsbar grafik."""
     logger.info('extraherar text från pdf')
     all_lines = []
     attendance_finished = False
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            text = page.extract_text() or ""
+            text = remove_page_number(page).extract_text() or ""
             # Grafik utan läsbara bokstäver kan vara text ritad som konturer.
             if not attendance_finished and not any(char.isalpha() for char in text):
                 if page.curves or page.images:
@@ -80,7 +112,8 @@ def get_text_from_pdf(pdf_path) -> list[str] | None:
     return all_lines
 
 
-def get_meeting_paragraphs(all_lines):
+def get_meeting_paragraphs(all_lines: list[str]) -> list[int] | None:
+    """Hämta paragrafnumren från raden som anger vad protokollet omfattar."""
     logger.info('Hämtar mötets paragrafer')
     for line in all_lines:
         lower = line.lower()
@@ -92,53 +125,108 @@ def get_meeting_paragraphs(all_lines):
         
     return []
 
-def get_attendance_sections(all_lines):
-    logger.info('Hämtar mötets närvarolista')
-    # Ta ut alla ledamöter
-    voting_members = []
-    voting_member_section = False
+def get_attendance_lines(all_lines: list[str]) -> list[str]:
+    """Hämta närvarodelen mellan dess rubriker; avbryt om slutrubriken saknas."""
+    attendance_lines = []
+    in_section = False
 
     for line in all_lines:
+        line = line.strip()
         lower = line.lower()
-
-        if lower.strip().isdigit():
-            continue
-
         if "beslutande ledamöter" in lower:
-            voting_member_section = True
+            in_section = True
             continue
+        if in_section and "ej tjänstgörande ersättare" in lower:
+            return attendance_lines
+        if in_section and line and not line.isdigit():
+            attendance_lines.append(line)
 
-        if "ersätter" in lower:
-            break
-
-        if voting_member_section:
-            voting_members.append(line)
-
-
-    # Ta ut alla replacements
-    voting_replacements = []
-    voting_member_section = False
-
-    for line in all_lines:
-        lower = line.lower()
-
-        if lower.strip().isdigit():
-            continue
-        
-        if voting_members[-1].lower() in lower:
-            voting_member_section = True
-            continue
-
-        if "ej tjänstgörande ersättare" in lower:
-            break
-
-        if voting_member_section:
-            voting_replacements.append(line)
-
-    return voting_members, voting_replacements
+    raise ValueError("Kunde inte hitta hela avsnittet för beslutande ledamöter")
 
 
-def structure_members_section(members_section, meeting_paragraphs):
+def attendance_row_is_complete(row: str) -> bool:
+    """Kontrollera om en personpost ser komplett ut innan nästa person börjar."""
+    if "ersätter" in row.lower():
+        # Den sista ersatta personen ska ha ett namn och en partibeteckning.
+        last_member = re.split("ersätter", row, flags=re.IGNORECASE)[-1]
+        last_member = re.sub(
+            r"\(\s*(?:p\.?|beslutsgrupp)\s*\d[\d\s,\-–]*\)",
+            "", last_member, flags=re.IGNORECASE,
+        )
+        return re.fullmatch(
+            r"\s*[^()]+\([A-Za-zÅÄÖåäö-]+\)(?:\s*\([^)]*\))?(?:\s+pga jäv)?"
+            r"(?:\s*§{1,2}\s*\d(?:[\d\s,§–-]*\d)?)?\s*",
+            last_member,
+            flags=re.IGNORECASE,
+        ) is not None
+
+    # En ledamotsrad får inte sluta mitt i en parentes eller ett intervall.
+    return (
+        row.count("(") == row.count(")")
+        and re.search(r"[\d)]$", row) is not None
+    )
+
+
+def merge_attendance_lines(attendance_lines: list[str]) -> list[str]:
+    """Slå ihop radbrutna personposter och rätta kända parentes- och kommafel."""
+    person_rows = []
+    current_row = ""
+    person_start = r"^[^()\d§,]+\([A-Za-zÅÄÖåäö-]+\)"
+
+    for line in attendance_lines:
+        # Rätta en extra öppningsparentes runt partibeteckningen, t.ex. ((L).
+        line = re.sub(r"\(\(([A-Za-zÅÄÖåäö-]+)\)", r"(\1)", line)
+        # Kommat mellan ersättningar kan ha hamnat inuti partiets parentes.
+        line = re.sub(r"\(([A-Za-zÅÄÖåäö-]+),\)", r"(\1),", line)
+        starts_person = (
+            re.match(person_start, line) is not None
+            and not line.lower().startswith("ersätter")
+        )
+        if not current_row:
+            current_row = line
+        elif starts_person and attendance_row_is_complete(current_row):
+            person_rows.append(current_row)
+            current_row = line
+        else:
+            # Ett ersatt namn kan fortsätta med flera namnled innan partiet kommer.
+            last_member = re.split("ersätter", current_row, flags=re.IGNORECASE)[-1]
+            continues_name = (
+                "ersätter" in current_row.lower()
+                and "(" not in last_member
+            )
+            if starts_person and not continues_name:
+                raise ValueError(f"Oklar radbrytning mellan: {current_row!r} och {line!r}")
+            current_row += " " + line
+
+    if current_row:
+        if not attendance_row_is_complete(current_row):
+            raise ValueError(f"Ofullständig personpost: {current_row}")
+        person_rows.append(current_row)
+
+    return person_rows
+
+
+def get_attendance_sections(all_lines: list[str]) -> tuple[list[str], list[str]]:
+    """Returnera sammanfogade ledamotsrader och ersättarrader var för sig."""
+    logger.info("Hämtar mötets närvarolista")
+    attendance_lines = get_attendance_lines(all_lines)
+    person_rows = merge_attendance_lines(attendance_lines)
+    members_section = []
+    replacements_section = []
+
+    for row in person_rows:
+        if "ersätter" in row.lower():
+            replacements_section.append(row)
+        else:
+            members_section.append(row)
+
+    return members_section, replacements_section
+
+
+def structure_members_section(
+    members_section: list[str], meeting_paragraphs: list[int]
+) -> list[dict[str, Any]]:
+    """Koppla ledamöternas namn och parti till paragrafer; inga angivna betyder alla."""
     
     voting_members_dicts = []
 
@@ -161,62 +249,24 @@ def structure_members_section(members_section, meeting_paragraphs):
     return voting_members_dicts
 
 
-def get_right_syntax_replacements(replacements_section):
-
-    voting_replacements_merged = []
-    extra_row_number = -1
-
-    for i, replacement_row in enumerate(replacements_section):
-
-        if extra_row_number == i:
-            continue
-
-        replacement_row = replacement_row.strip()
-
-        # Tillåt både § och §§, med eller utan mellanslag före numret.
-        correct_syntax = (
-            r"^§{1,2}\s*\d{1,3}(?:-\d{1,3})?"
-            r"(?:,\s*§{1,2}\s*\d{1,3}(?:-\d{1,3})?)*"
-            r"\s+ersätter\s+.+?\s+\([A-Za-zÅÄÖåäö]+\)"
-            r"(?:\s+\([^)]+\))?(?:\s+pga jäv)?\s*$"
-        )
-
-        comma_after_parantes = re.search(r"\)(?:\s+pga jäv)?\s*,", replacement_row)
-
-        if comma_after_parantes:
-            after_comma = replacement_row[comma_after_parantes.end():].strip()
-
-            if re.match(correct_syntax, after_comma):
-                voting_replacements_merged.append(replacement_row)
-            else:
-                if i + 1 >= len(replacements_section):
-                    raise ValueError(
-                        f"Ersättarraden kunde inte tolkas och saknar fortsättningsrad: {replacement_row}"
-                    )
-                merged = replacement_row + ' ' + replacements_section[i+1]
-                voting_replacements_merged.append(merged)
-                extra_row_number = i + 1
-
-        else:
-            voting_replacements_merged.append(replacement_row)
-
-    return voting_replacements_merged
-
-
-def structure_replacements_section(replacements_section, meeting_paragraphs):
+def structure_replacements_section(
+    replacements_section: list[str], meeting_paragraphs: list[int]
+) -> list[dict[str, Any]]:
+    """Tolka vem varje ersättare ersätter, under vilka paragrafer och eventuell jävorsak."""
 
     voting_extras_dict = []
 
-    for replacement in replacements_section:
-        replacement, rest = split_first_member(replacement)
+    for replacement_row in replacements_section:
+        person, rest = split_first_member(replacement_row)
+        replacement: dict[str, Any] = dict(person)
 
         replacement['replaces'] = []
 
         # Delpunkter räknas som hela paragrafer och ska inte dela ersättningar.
-        rest = re.sub(r"\(\s*p\.?\s*\d[\d\s,\-–]*\)", "", rest, flags=re.IGNORECASE)
+        rest = re.sub(r"\(\s*(?:p\.?|beslutsgrupp)\s*\d[\d\s,\-–]*\)", "", rest, flags=re.IGNORECASE)
 
-        # Dela efter parti/titel eller jäv, men behåll komman mellan intervall.
-        members = re.split(r"(?:(?<=\))|(?<=pga jäv))\s*,\s*", rest)
+        # Dela efter parti/titel eller namn, men behåll komman mellan intervall.
+        members = re.split(r"(?:(?<=\))|(?<=[A-Za-zÅÄÖåäö]))\s*,\s*", rest)
 
         for member in members:
             member = member.split('ersätter')
@@ -224,12 +274,20 @@ def structure_replacements_section(replacements_section, meeting_paragraphs):
             paragraph = member[0].strip()
             paragraphs = paragraph_interval(paragraph)
 
-            if paragraphs == None:
-                paragraphs = meeting_paragraphs
-
             name = member[1].strip()
-            name, rest = split_first_member(name)
+            if "(" in name:
+                name, rest = split_first_member(name)
+            else:
+                # Partiet kan saknas i protokollet; gissa inte vilket det är.
+                name = {"name": name, "party": None, "title": None}
+                rest = ""
             reason = "jäv" if "pga jäv" in rest.lower() else None
+
+            # I vissa protokoll står paragraferna efter den ersatta personen.
+            if paragraphs is None:
+                paragraphs = paragraph_interval(rest)
+            if paragraphs is None:
+                paragraphs = meeting_paragraphs
 
             replacement['replaces'].append(
                 {
@@ -242,3 +300,40 @@ def structure_replacements_section(replacements_section, meeting_paragraphs):
         voting_extras_dict.append(replacement)
 
     return voting_extras_dict
+
+
+def read_meeting(pdf_path: Path) -> dict[str, Any]:
+    """Tolka ett protokoll och returnera lässtatus samt närvarodata om det lyckas."""
+    pdf_text = get_text_from_pdf(pdf_path)
+    if pdf_text is None:
+        return {"status": "unreadable_text"}
+    paragraphs = get_meeting_paragraphs(pdf_text)
+    if not paragraphs:
+        logger.warning("Inga paragrafer hittades för %s", pdf_path.name)
+        return {"status": "missing_paragraphs"}
+    members, replacements = get_attendance_sections(pdf_text)
+    return {
+        "status": "processed",
+        "paragraphs": paragraphs,
+        "members": structure_members_section(members, paragraphs),
+        "replacements": structure_replacements_section(replacements, paragraphs),
+    }
+
+
+def load_meeting_reading(pdf_path: Path, cache_dir: Path, use_cache: bool = True) -> dict[str, Any]:
+    """Återanvänd PDF-tolkning om filstorlek och ändringstid matchar, annars läs om."""
+    if not pdf_path.exists():
+        logger.info("%s finns inte", pdf_path.name)
+        return {"status": "missing_pdf"}
+    cache_path = cache_dir / f"{pdf_path.stem}.json"
+    pdf_stat = pdf_path.stat()
+    pdf_version = [pdf_stat.st_size, pdf_stat.st_mtime_ns]
+    if use_cache and cache_path.exists():
+        reading = read_json(cache_path)
+        if reading["pdf_version"] == pdf_version:
+            logger.info("Använder sparad PDF-tolkning för %s", pdf_path.name)
+            return reading
+    reading = read_meeting(pdf_path)
+    reading["pdf_version"] = pdf_version
+    save_json(reading, cache_path)
+    return reading

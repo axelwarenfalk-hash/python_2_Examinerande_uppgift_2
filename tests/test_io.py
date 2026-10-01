@@ -3,7 +3,7 @@ from unittest.mock import Mock, patch
 import pytest
 import requests
 
-from malmo_council_attendance.io import get_json, get_meetings
+from malmo_council_attendance.io import get_api_json, get_page_html
 
 
 @pytest.mark.parametrize(
@@ -13,7 +13,7 @@ from malmo_council_attendance.io import get_json, get_meetings
         [{"RepresentativeId": 1, "Role": "Ledamot"}],
     ],
 )
-def test_get_json_returns_json_and_logs_success(expected):
+def test_get_api_json_returns_json_and_logs_success(expected):
     url = "https://example.test/api"
     response = Mock()
     response.status_code = 200
@@ -26,7 +26,7 @@ def test_get_json_returns_json_and_logs_success(expected):
         ) as mock_get,
         patch("malmo_council_attendance.io.logger.info") as mock_info,
     ):
-        result = get_json(url)
+        result = get_api_json(url)
 
     assert result == expected
     mock_get.assert_called_once_with(url, timeout=30)
@@ -38,7 +38,7 @@ def test_get_json_returns_json_and_logs_success(expected):
     )
 
 
-def test_get_json_does_not_log_http_error():
+def test_get_api_json_does_not_log_http_error():
     response = Mock()
     response.raise_for_status.side_effect = requests.HTTPError("Serverfel")
 
@@ -51,7 +51,7 @@ def test_get_json_does_not_log_http_error():
         patch("malmo_council_attendance.io.logger.exception") as mock_exception,
         pytest.raises(requests.HTTPError),
     ):
-        get_json("https://example.test/api")
+        get_api_json("https://example.test/api")
 
     mock_info.assert_not_called()
     mock_exception.assert_called_once_with(
@@ -60,9 +60,9 @@ def test_get_json_does_not_log_http_error():
     )
 
 
-def test_get_meetings_returns_response_and_logs_success():
+def test_get_page_html_returns_response_and_logs_success():
     url = "https://example.test/meetings"
-    response = Mock(status_code=200)
+    response = Mock(status_code=200, text="<h1>Meeting</h1>")
 
     with (
         patch(
@@ -71,19 +71,19 @@ def test_get_meetings_returns_response_and_logs_success():
         ) as mock_get,
         patch("malmo_council_attendance.io.logger.info") as mock_info,
     ):
-        result = get_meetings(url)
+        result = get_page_html(url)
 
-    assert result is response
+    assert result.h1.get_text() == "Meeting"
     mock_get.assert_called_once_with(url, timeout=30)
     response.raise_for_status.assert_called_once_with()
     mock_info.assert_called_once_with(
-        "Mötessidan hämtades: %s (HTTP %s)",
+        "Webbsidan hämtades: %s (HTTP %s)",
         url,
         200,
     )
 
 
-def test_get_meetings_logs_http_error_and_reraises():
+def test_get_page_html_logs_http_error_and_reraises():
     url = "https://example.test/meetings"
     response = Mock()
     response.raise_for_status.side_effect = requests.HTTPError("Serverfel")
@@ -96,9 +96,9 @@ def test_get_meetings_logs_http_error_and_reraises():
         patch("malmo_council_attendance.io.logger.exception") as mock_exception,
         pytest.raises(requests.HTTPError),
     ):
-        get_meetings(url)
+        get_page_html(url)
 
     mock_exception.assert_called_once_with(
-        "Hämtning av mötessidan misslyckades: %s",
+        "Hämtning av webbsidan misslyckades: %s",
         url,
     )

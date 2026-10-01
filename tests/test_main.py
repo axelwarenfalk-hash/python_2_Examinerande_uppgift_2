@@ -1,43 +1,30 @@
-from unittest.mock import call, patch
+from unittest.mock import patch
 
 import pandas as pd
 
 from malmo_council_attendance import __main__ as app
 
 
-def test_main_logs_start_and_member_replacement_summary():
-    members_df = pd.DataFrame({"representative_id": [1]})
-    roles_df = pd.DataFrame({"representative_id": [1]})
-    merged_df = pd.DataFrame({"representative_id": [1]})
-    replacements_df = pd.DataFrame({"representative_id": [2, 3]})
-
+def test_main_connects_stages_and_returns_saved_attendance():
+    members = pd.DataFrame({"representative_id": [1]})
+    meetings = pd.DataFrame({"date": [pd.Timestamp("2024-01-01")]})
+    attendance = pd.DataFrame({"status": ["present"]})
     with (
-        patch.object(app, "config_logging") as mock_config_logging,
-        patch.object(app, "get_json", side_effect=[{}, []]),
-        patch.object(app, "make_all_members_dataframe", return_value=members_df),
-        patch.object(app, "make_all_roles_dataframe", return_value=roles_df),
-        patch.object(
-            app,
-            "merge_all_members_with_all_roles",
-            return_value=merged_df,
-        ),
-        patch.object(
-            app,
-            "separate_members_from_replacements",
-            return_value=(members_df, replacements_df),
-        ),
-        patch.object(app, "get_meetings"),
-        patch.object(app.logger, "info") as mock_info,
+        patch.object(app, "config_logging"),
+        patch.object(app, "load_council", return_value=(members, pd.DataFrame())) as council,
+        patch.object(app, "load_meetings", return_value=meetings) as meeting_loader,
+        patch.object(app, "select_members_from_term_start", return_value=(members, pd.DataFrame())),
+        patch.object(app, "select_term_meetings", return_value=meetings),
+        patch.object(app, "make_analysis_summary", return_value={}),
+        patch.object(app, "save_json"),
+        patch.object(app, "download_meeting_pdfs") as download,
+        patch.object(app, "build_attendance", return_value=attendance) as build,
+        patch.object(app, "save_dataframe") as save,
     ):
-        app.main()
-
-    mock_config_logging.assert_called_once_with()
-    assert mock_info.call_args_list == [
-        call("Startar inläsning av kommunfullmäktiges grunddata"),
-        call(
-            "Grunddata klar: %d ledamotsrader och %d ersättarrader",
-            1,
-            2,
-        ),
-        call("Möteslistan är tillgänglig för vidare bearbetning"),
-    ]
+        assert app.main() is attendance
+    council.assert_called_once_with(app.council_cache_path, app.use_council_cache)
+    meeting_loader.assert_called_once_with(app.meetings_cache_path, app.use_meetings_cache)
+    download.assert_called_once_with(meetings, app.pdf_dir)
+    build.assert_called_once_with(meetings, members, app.pdf_dir, app.reading_cache_dir,
+                                  app.analysis_meetings_path, app.use_reading_cache)
+    save.assert_called_once_with(attendance, app.attendance_path)
