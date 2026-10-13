@@ -18,11 +18,11 @@ Lösningen fungerar genom att jag först hämtar varje politker från malmöstad
 ## Resultat
 Lösningen sammanställer närvaron på politikerna i kommunfullmäktige genom graferna i data/plots.
 Den ger:
-Närvaro per paragraf per politker
-Genomsnittlig närvaror per paragraf per parti
-Närvaro per möte (närvarande på mins en paragraf räknas som full närvaro) per politker
-Genomsnittlig närvaror möte (närvarande på mins en paragraf räknas som full närvaro) per parti
-Se under data/plots
+- Närvaro per paragraf per politker
+- Genomsnittlig närvaror per paragraf per parti
+- Närvaro per möte (närvarande på mins en paragraf räknas som full närvaro) per politker
+- Genomsnittlig närvaror möte (närvarande på mins en paragraf räknas som full närvaro) per parti
+- Se under data/plots
 
 ## Begränsningar och möjliga förbättringar
 1. Ibland deltar inte en politiker på en viss paragraf pga "jäv". Jäv betyder att en politiker upplever att denna inte kan vara opartisk i beslutet pga t.ex. finansiella intressen eller andra intressen. Detta räknas just nu som fullständig frånvaro trots att polikern gjort rätt ifrån sig genom att avstå. För att kunna fånga upp detta så behöver man läsa igenom vgarje paragraf i hela pdfen. Just nu läser jag bara av närvarolistan högst upp i pdf:en. 
@@ -36,9 +36,9 @@ Både Beautiful soup och pdf-plumber kan vara mycket användbara inom data-scien
 
 ## Källor
 Ange de viktigaste källorna och dokumentationen du har använt.
-Regex: https://www.youtube.com/watch?v=K8L6KVGG-7o&t=1928s
-Beautiful soup: https://beautiful-soup-4.readthedocs.io/en/latest/, https://www.youtube.com/watch?v=ng2o98k983k
-Pdf plumber: chat gpt
+- Regex: https://www.youtube.com/watch?v=K8L6KVGG-7o&t=1928s
+- Beautiful soup: https://beautiful-soup-4.readthedocs.io/en/latest/, https://www.youtube.com/watch?v=ng2o98k983k
+- Pdf plumber: chat gpt
 
 
 ## Självreflektion
