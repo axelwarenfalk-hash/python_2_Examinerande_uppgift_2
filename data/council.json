@@ -1,0 +1,3078 @@
+{
+  "representatives": {
+    "Items": [
+      {
+        "Id": "ae093f9c-679c-4e6a-a27c-16c2ca0cea19",
+        "Name": "Albin Schyllert",
+        "Email": "albin.schyllert@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/5c700ec2-08b2-45f0-9343-ff8733903e4ajpg"
+      },
+      {
+        "Id": "9891bac6-6ea1-447e-979d-955146c3aa71",
+        "Name": "Amanda Johannesson",
+        "Email": "amanda.johannesson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/d5480762-6cc9-4e38-9807-a5889aa340eejpg"
+      },
+      {
+        "Id": "59b723e4-235f-4170-bd52-33ab369da4a2",
+        "Name": "Amani Loubani",
+        "Email": "amani.loubani@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/d361bd8c-4d77-4d0d-910a-56e069a3d606jpg"
+      },
+      {
+        "Id": "2f80a096-78a0-40b9-8557-15c09581116f",
+        "Name": "Ana Maria Stuparich-Clementi",
+        "Email": "anamaria.stuparich-clementi@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/ceb3e3c1-8eaa-450b-b92c-2b2579f2789ejpg"
+      },
+      {
+        "Id": "05bff02c-6fe0-48dc-83db-0f720e669bca",
+        "Name": "Anders Andersson",
+        "Email": "anders.g.andersson@malmo.se",
+        "WorkPhone": " 040-34 10 17",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/c1beb3eb-9ee5-4ee6-8412-e2a73d28dcfdjpg"
+      },
+      {
+        "Id": "821082aa-ce67-4052-a601-f4170f359150",
+        "Name": "Anders Nilsson",
+        "Email": "anders.s.nilsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": "0708743993",
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/ef121a0c-5169-4fc9-a035-f07451f10ffajpg"
+      },
+      {
+        "Id": "8cca2a82-203b-4130-8cdc-449d5ac7d725",
+        "Name": "Anders Olin",
+        "Email": "Anders.Olin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/d3295f7a-d2a0-4ca9-a1a5-f0b53d0f7ec6jpg"
+      },
+      {
+        "Id": "257a47db-e3c1-485e-81c3-dee7e47f53b1",
+        "Name": "Anders Pripp",
+        "Email": "Anders.Pripp@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/da8b2ac9-7991-4f62-afcf-c1d0ccca695ajpg"
+      },
+      {
+        "Id": "2647b31c-a2f2-427f-91a5-313ef2cd8645",
+        "Name": "Anders Rubin",
+        "Email": "anders.rubin@malmo.se",
+        "WorkPhone": "040-341009",
+        "PersonalPhone": "0706362677",
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/f356ac5f-0108-4b78-9536-6e90ab856284jpg"
+      },
+      {
+        "Id": "97faa028-2eea-4b7f-9226-60172e065e35",
+        "Name": "Anders Skans",
+        "Email": "anders.skans@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/3163d697-f528-46c2-982f-95abe11b6ee9jpg"
+      },
+      {
+        "Id": "d46cb654-15f6-43dc-bd6b-6677a34f5e62",
+        "Name": "Andréas Schönström",
+        "Email": "Andreas.Schonstrom@malmo.se",
+        "WorkPhone": "040-34 10 16",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/f2452d0f-04c0-44ee-a0ef-896c3c704a25jpg"
+      },
+      {
+        "Id": "174aab56-baab-4af1-b6d4-f9339695d8e2",
+        "Name": "Anfal Mahdi",
+        "Email": "anfal.mahdi@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/909e6c0c-c58e-4eba-8fad-c76c621c9d05jpg"
+      },
+      {
+        "Id": "de8eddc7-97c9-4f3d-91b1-21baa9210ac2",
+        "Name": "Anja Nordberg Sonesson",
+        "Email": "anja.nordbergsonesson@malmo.se",
+        "WorkPhone": "0703739042",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/9d7c39df-338c-4d56-81c6-53ce8987699djpg"
+      },
+      {
+        "Id": "9ead4156-bc4e-46ba-893a-3d641cbe0bd1",
+        "Name": "Anna Ljunggren",
+        "Email": "anna.ljunggren@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/ae979306-4f0a-44b1-9687-c13cb4bcf31djpg"
+      },
+      {
+        "Id": "ff30a6ce-9f69-4a81-a5e1-4c0112e5d6fc",
+        "Name": "Anton Sauer",
+        "Email": "anton.sauer@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "80fc76af-01bd-4c27-9e4d-90900af2106f",
+          "Name": "Centerpartiet"
+        },
+        "ImageLink": "/sv/documents/a9889228-0957-4998-a80a-58dce28cb8dfjpg"
+      },
+      {
+        "Id": "5244b237-0261-4979-88f1-c445450e30ed",
+        "Name": "Arwin Sohrabi Nejad",
+        "Email": "Arwin.Sohrabi@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/182d64a1-65a1-4bfc-a5ad-a997ab2e2325jpg"
+      },
+      {
+        "Id": "132fb10d-5c41-4566-bd02-82a912d1aa73",
+        "Name": "Bengt-Göran Svensson",
+        "Email": "bengt-goran.svensson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/818c04b2-3834-4b94-b970-98f16dfd9ef8jpg"
+      },
+      {
+        "Id": "bc91342f-2be9-4b07-acb5-8a4d9d1b1e6e",
+        "Name": "Birgit Hansson",
+        "Email": "birgit.hansson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/b2d03f55-1aa6-405f-a5f9-89a6200b40b4jpg"
+      },
+      {
+        "Id": "ad2fe56d-40a4-4750-a693-b6147a316280",
+        "Name": "Birgitta Ehlin",
+        "Email": "birgitta.ehlin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/311121ce-af08-4fd7-a342-4683158ffee5jpg"
+      },
+      {
+        "Id": "a3494799-c3e6-4c69-a39b-7a23a863ef85",
+        "Name": "Björn Gudmundsson",
+        "Email": "Bjorn.Gudmundsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": "0706313134",
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/b37bc4b8-ae7f-49db-93bd-cb1736fb5db4jpg"
+      },
+      {
+        "Id": "9c88fa86-7429-4454-9b95-ce77032bcbf6",
+        "Name": "Boel Pettersson",
+        "Email": "boel.pettersson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/d622d012-c584-4206-a6af-fc8c28140566jpg"
+      },
+      {
+        "Id": "212b74c5-1690-4295-9160-7b6e1d42a288",
+        "Name": "Carina Nilsson",
+        "Email": "carina.nilsson.ks@malmo.se",
+        "WorkPhone": "040-34 10 27",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/7b8d15e0-4b93-4c94-9adf-1dc8980cee20jpg"
+      },
+      {
+        "Id": "63f5553e-058f-4a00-9a16-f6cda504ca43",
+        "Name": "Carin Gustafsson",
+        "Email": "carin.gustafsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/861af505-0d0a-4acd-9593-3c74901c9d5djpg"
+      },
+      {
+        "Id": "976de9a6-c98f-4b61-89eb-af5eb4691a14",
+        "Name": "Danica Srnic",
+        "Email": "Danica.Srnic@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": null
+      },
+      {
+        "Id": "65dbc052-da82-4448-adac-e33aa90d385f",
+        "Name": "Darko Simic",
+        "Email": "darko.simic@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/bc06f389-acc2-450d-af7c-a71d90520f7bjpg"
+      },
+      {
+        "Id": "1599d958-ffd2-4654-a0bf-f9cb0043e3f9",
+        "Name": "Dündar Güngör",
+        "Email": "Dundar.Gungor@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/31a716ec-8ea7-4bcf-b464-dca4ee942694jpg"
+      },
+      {
+        "Id": "a4f08df5-06eb-41ab-9cab-e2a29d2c4468",
+        "Name": "Erik Hammarström",
+        "Email": "erik.hammarstrom@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/bead2d7f-0973-47d5-af5e-b1c28c2e3a1djpg"
+      },
+      {
+        "Id": "5256575b-0700-4f75-adf9-0148f08670f3",
+        "Name": "Eva Bertz",
+        "Email": "ewa.bertz@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "9e4e32a0-fd7a-4332-8821-ce16ffe04e29",
+          "Name": "Liberalerna"
+        },
+        "ImageLink": "/sv/documents/4abf38a3-7d00-45ab-8608-620bb16165d3jpg"
+      },
+      {
+        "Id": "992e9c87-2f18-4a8a-9588-d39b84c54324",
+        "Name": "Eva Hallén",
+        "Email": "eva.hallen@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/1f14266d-c3db-4c1c-8555-9edcf46f640cjpg"
+      },
+      {
+        "Id": "31b57dd2-c1d5-4be6-8842-26f21b6d909b",
+        "Name": "Ewa Langerbeck",
+        "Email": "ewa.langerbeck@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "80fc76af-01bd-4c27-9e4d-90900af2106f",
+          "Name": "Centerpartiet"
+        },
+        "ImageLink": "/sv/documents/46a8ef9b-f020-4e56-857b-cb157a69a0e5jpg"
+      },
+      {
+        "Id": "c1d0c0f3-cc2e-477f-8f39-c34fec13e45a",
+        "Name": "Farishta Sulaiman",
+        "Email": "farishta.sulaiman@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/22de16e1-f562-45a8-a14f-b7f15617386ejpg"
+      },
+      {
+        "Id": "c99a63ce-c119-4f69-91cd-351133aab3cc",
+        "Name": "Frida Trollmyr",
+        "Email": "frida.trollmyr@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/98b49406-dab9-45c6-b6d6-950ef7c8cb2djpg"
+      },
+      {
+        "Id": "96a55325-9fd0-4dab-b775-93326d51c9e9",
+        "Name": "Håkan Ask",
+        "Email": "hakan.ask@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/e823a2da-4cab-4cf7-b1f9-01f9b484f3dajpg"
+      },
+      {
+        "Id": "98b835ab-0a26-44e6-a111-3ca3ad20055d",
+        "Name": "Håkan Fäldt",
+        "Email": "Hakan.Faldt@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/84a527a4-a152-402b-86ac-97e4b6bde76bjpg"
+      },
+      {
+        "Id": "e4ed8408-250c-4a1c-9b64-4e3d9c66073c",
+        "Name": "Hanna Sandberg",
+        "Email": "hanna.sandberg@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/900cc862-78d3-42ae-852b-944ad85198dbjpg"
+      },
+      {
+        "Id": "feb822f1-6ff0-4f7d-b9ef-501ba28554ad",
+        "Name": "Haqvin Svensson",
+        "Email": "haqvin.svensson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/8eef00b9-7545-442f-bba9-b3a3e6c1198djpg"
+      },
+      {
+        "Id": "a12f43a0-6e65-47df-bfc0-9eca1b1a31c3",
+        "Name": "Hasse Hajar",
+        "Email": "hasse.hajar@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/dc931c6c-7278-4c92-aa88-b2f4676f5beajpg"
+      },
+      {
+        "Id": "6def4f89-9052-4540-a78f-0c154a5d1dc2",
+        "Name": "Helena Grahn",
+        "Email": "Helena.Grahn@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/32110196-8e63-4b86-97f6-76641e24256cjpg"
+      },
+      {
+        "Id": "0500f3ac-fe5f-4abf-ad3d-d93c34b46314",
+        "Name": "Helena Nanne",
+        "Email": "Helena.Nanne@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/be2f64f4-f0f3-4b17-a51f-e74de140fc93jpg"
+      },
+      {
+        "Id": "4f2849fd-daa6-4924-8255-649cd893ae12",
+        "Name": "Henning Süssner Rubin",
+        "Email": "",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": null
+      },
+      {
+        "Id": "3b584612-f5c6-4325-9229-b6131291ba0f",
+        "Name": "Ingrid Gunnarson",
+        "Email": "ingridanna-l.gunnarson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/a769e649-cfe4-4422-be29-0059861bcc65jpg"
+      },
+      {
+        "Id": "43d4a72b-9869-4903-916b-851482e6a85f",
+        "Name": "Jacqueline Maly",
+        "Email": "jacquelineisabell.maly@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/39cf12c7-2873-46a7-aa58-dd3b529c8831jpg"
+      },
+      {
+        "Id": "8a33c931-c809-4c80-8aa8-d78759c8da44",
+        "Name": "Janne Grönholm",
+        "Email": "janne.gronholm@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/ae61558a-aa4a-46ac-b620-d39285d2e31ajpg"
+      },
+      {
+        "Id": "4df6dbeb-141e-465b-95c3-29c2d2bb06da",
+        "Name": "Jan Olsson",
+        "Email": "Jan.E.Olsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/cd01c618-b144-4624-a9d6-bcf2c8871028jpg"
+      },
+      {
+        "Id": "9e578f96-e7b8-4da4-bd7c-56421dbdd0c8",
+        "Name": "Jenny Bengtsson",
+        "Email": "jenny.bengtsson3@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/cb214c6a-d9cb-44db-9234-40272b97a295jpg"
+      },
+      {
+        "Id": "f9910041-78d5-4690-8f7f-7e4107259d58",
+        "Name": "Joel Laguna Ascacivar",
+        "Email": "Joel.Laguna@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "9e4e32a0-fd7a-4332-8821-ce16ffe04e29",
+          "Name": "Liberalerna"
+        },
+        "ImageLink": "/sv/documents/568486e2-103f-46da-8f12-691a4337dd13jpg"
+      },
+      {
+        "Id": "c6b49b0f-6954-4e24-9a01-0407399428e1",
+        "Name": "John Eklöf",
+        "Email": "John.Eklof@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/ee69404b-23e5-4237-a731-d8eb24462f6fjpg"
+      },
+      {
+        "Id": "a4591f57-dd28-410b-bdf2-64f3de9c69bf",
+        "Name": "John Roslund",
+        "Email": "john.roslund@malmo.se",
+        "WorkPhone": "0709162312",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/2c8a5b42-c90d-4c16-8715-3fd7ba6a0bd5jpg"
+      },
+      {
+        "Id": "d61429d6-a0a1-4ec4-a35c-a285757ed2dd",
+        "Name": "Jörgen Grubb",
+        "Email": "Jorgen.Grubb@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/21ade062-8bc0-4bfe-8685-8f4649b2ef7ejpg"
+      },
+      {
+        "Id": "93ea9222-a9b4-4c9b-94a5-09fe67676ca6",
+        "Name": "Juan-Tadeo Espitia",
+        "Email": "Juan.Espitia@malmo.se",
+        "WorkPhone": " 0708-78 05 26",
+        "PersonalPhone": "076-945 56 69",
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/ec11d4ca-12ac-4b9c-adb7-62ffe50efc44jpg"
+      },
+      {
+        "Id": "c754e6e9-8735-429b-b89b-c8e1e41f87dc",
+        "Name": "Katrin Stjernfeldt Jammeh",
+        "Email": "katrin.stjernfeldt-jammeh@malmo.se",
+        "WorkPhone": "040-341014",
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/43c2e200-412d-46b8-b8a7-f58b1948bbbbjpg"
+      },
+      {
+        "Id": "d4960123-e994-4975-9c49-5b6c3cbe6c92",
+        "Name": "Kay Wictorin",
+        "Email": "kay.wictorin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "80fc76af-01bd-4c27-9e4d-90900af2106f",
+          "Name": "Centerpartiet"
+        },
+        "ImageLink": "/sv/documents/d535f92e-df81-42b4-8c61-1e00e64677edjpg"
+      },
+      {
+        "Id": "6d94772b-4428-4ade-9fdf-081045385c06",
+        "Name": "Kerstin Håkansson",
+        "Email": "kerstin.hakansson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/2bd27460-442d-4267-abb1-52ba9addf525jpg"
+      },
+      {
+        "Id": "80e4b2ce-0a83-40d8-b5f1-ed1808f3c40b",
+        "Name": "Lars-Johan Hallgren",
+        "Email": "lars-johan.hallgren@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/7566fd06-5b2c-4dd2-897f-b865fc612a53jpg"
+      },
+      {
+        "Id": "8dc93c78-721d-4fd9-9e49-fc3b2c805f3a",
+        "Name": "Linda Eklund",
+        "Email": "linda.eklund@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "9e4e32a0-fd7a-4332-8821-ce16ffe04e29",
+          "Name": "Liberalerna"
+        },
+        "ImageLink": "/sv/documents/2729f17e-946d-4c67-bb74-87c11d27c22cjpg"
+      },
+      {
+        "Id": "16dd7e81-9c4e-4be9-bfc4-795434d2fd05",
+        "Name": "Linda Obiedzinski",
+        "Email": "linda.obiedzinski@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": " 0708-519 951",
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/d505de03-d0bc-4e78-8bdc-db7deba257efjpg"
+      },
+      {
+        "Id": "aa9642d1-0341-4cbd-b169-3db7d14f77af",
+        "Name": "Lisa Stolpe",
+        "Email": "Lisa.Stolpe@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/1aa843f7-1d88-494b-ae36-6c68e0c77da8jpg"
+      },
+      {
+        "Id": "daf48514-1b99-4c8e-b517-f99680c2af40",
+        "Name": "Lisbeth Persson Ekström",
+        "Email": "Lisbeth.Persson-Ekstrom@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/bedc16e0-2fba-45d5-b9a7-b41982c25279jpg"
+      },
+      {
+        "Id": "7e25b637-52ff-4a90-9978-035855d43e9e",
+        "Name": "Magnus Olsson",
+        "Email": "Magnus.Olsson4@malmo.se",
+        "WorkPhone": "341054",
+        "PersonalPhone": "0709130799",
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/f5483024-0fad-48fe-9a4a-86349ee53a42jpg"
+      },
+      {
+        "Id": "43a61c52-428e-4e66-a61b-843a42f28ea5",
+        "Name": "Malin Ahlström",
+        "Email": "malin.ahlstrom@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/4d5df900-c06e-42cd-9ad8-39b35f0460c8jpg"
+      },
+      {
+        "Id": "23f30630-a794-4fa6-9993-551b9f759359",
+        "Name": "Marie Tanndal",
+        "Email": "marie.tanndal@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/8fef92c7-c0b4-45ac-b28e-29c367ab50dbjpg"
+      },
+      {
+        "Id": "34331c59-4650-4ea2-ba8a-2c216e89f9a1",
+        "Name": "Martin Molin",
+        "Email": "martin.molin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "80fc76af-01bd-4c27-9e4d-90900af2106f",
+          "Name": "Centerpartiet"
+        },
+        "ImageLink": "/sv/documents/1dfa79a5-087e-4093-9bca-fa57174fe486jpg"
+      },
+      {
+        "Id": "ee266fb0-82e2-4505-837f-7efddde08a1f",
+        "Name": "Mats Brogren",
+        "Email": "bomats.brogren@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/6d4dac7f-9456-43a5-a9f0-f2e58f7d401ejpg"
+      },
+      {
+        "Id": "10e59e37-c218-45d5-be5c-93a72e35037b",
+        "Name": "Mats Mattsson",
+        "Email": "mats.mattsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/ef8fc175-07a6-435a-853b-a60a1f148b08jpg"
+      },
+      {
+        "Id": "1d8fd054-c92d-4407-aed9-829839ca5404",
+        "Name": "Michael Hård af Segerstad",
+        "Email": "michael.hardafsegerstad@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/2f3a10ba-73f4-4fd0-9929-fd05b357f8adjpg"
+      },
+      {
+        "Id": "a4cecad6-62f7-4fde-b248-87cea7325fda",
+        "Name": "Mohamed Yassin",
+        "Email": "mohamed.yassin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/f7748e5c-d1bd-4b25-bd90-55f16c1138f5jpg"
+      },
+      {
+        "Id": "dbf5b621-f094-41ef-9595-a3bf9f98f7c2",
+        "Name": "Mubarik Abdirahman",
+        "Email": "mubarik.abdirahman@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/2db65e5b-fd70-4196-a299-ac047205e4b8jpg"
+      },
+      {
+        "Id": "ac638b47-78fa-4e8d-a6e5-50948d9488e2",
+        "Name": "Nadjam-Ud-Din Malik",
+        "Email": "nadjam.ud-din@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/86f96f69-87a4-431f-93b9-564331ddd849jpg"
+      },
+      {
+        "Id": "d1991c1f-3062-4da9-830d-fa4ac7548468",
+        "Name": "Neziya Rahman",
+        "Email": "Neziya.Rahman@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": null
+      },
+      {
+        "Id": "197d2cd3-5ce3-4b4a-853d-2a4032f7388a",
+        "Name": "Nichlas Holmgren Gellersten",
+        "Email": "nichlas.holmgrengellersten@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/71b0068a-03a2-4110-b6e4-490912c1f58ajpg"
+      },
+      {
+        "Id": "101c67c4-afed-41dd-990d-498e9ff440ba",
+        "Name": "Nicola Rabi",
+        "Email": "Nicola.Rabi@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/3a148920-f8c4-4897-83e8-c551101c69cajpg"
+      },
+      {
+        "Id": "38798a0f-cdc8-4e69-ac55-95097335e400",
+        "Name": "Nina Jakku",
+        "Email": "ninajohanna.jakku@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/1a9f2411-108d-4029-b8c4-1587ef25a3a3jpg"
+      },
+      {
+        "Id": "98d82d63-e608-4ece-b1b4-84240987866a",
+        "Name": "Olga Krivtsova",
+        "Email": "olga.krivtsova@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": null
+      },
+      {
+        "Id": "de1dea17-eb11-4ad9-9e82-43ad482d4826",
+        "Name": "Patrick Angelin",
+        "Email": "patrick.angelin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/83a70720-fe4c-4000-afab-ab1e360661a0jpg"
+      },
+      {
+        "Id": "a2789854-37cf-4cc2-8520-81a5da8e4c54",
+        "Name": "Pernilla Röjner",
+        "Email": "Pernilla.Rojner@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/f62dbb97-3051-49be-b05a-bdc20caa4bacjpg"
+      },
+      {
+        "Id": "7f4f8664-d875-4d98-b3b8-a606f1c43646",
+        "Name": "Peter Johansson",
+        "Email": "Peter.Johansson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/eeeff85a-5352-4e31-84eb-0a1fa6f66f48jpg"
+      },
+      {
+        "Id": "b26a11ac-7c72-4a1b-ab2f-3b915bcfa34b",
+        "Name": "Petra Lundgren",
+        "Email": "petra.lundgren@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b6ad83ab-710a-48c6-967b-0ff17164d27c",
+          "Name": "Politiskt obunden"
+        },
+        "ImageLink": "/sv/documents/4187523a-9d90-4712-aaf2-9b33da87cf3ejpg"
+      },
+      {
+        "Id": "3eb59df0-6725-4a99-92f1-ab8d847ca940",
+        "Name": "Rickard Åhman Persson",
+        "Email": "Rickard.Ahman-Persson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/4d6b0593-3ad2-4350-b9e0-df1afc32df1bjpg"
+      },
+      {
+        "Id": "eeea691f-5e9d-4338-951c-20ad01113619",
+        "Name": "Roko Kursar",
+        "Email": "Roko.Kursar@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "9e4e32a0-fd7a-4332-8821-ce16ffe04e29",
+          "Name": "Liberalerna"
+        },
+        "ImageLink": "/sv/documents/9ed3bc7f-77ee-4174-bb65-39e914af093bjpg"
+      },
+      {
+        "Id": "c67e3c02-d886-4637-b36d-621c1b20e1cc",
+        "Name": "Sadiye Altundal",
+        "Email": "sadiye.altundal@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/be96648d-5c87-4eeb-a182-1ed388dadfbfjpg"
+      },
+      {
+        "Id": "385c8ef4-3c8b-4b91-873e-04e8aaab3916",
+        "Name": "Sanna Axelsson",
+        "Email": "Sanna.Axelsson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/bd213169-4b0e-4c65-975e-3848114059f3jpg"
+      },
+      {
+        "Id": "4f529682-108f-41b9-b55a-e2cf9749bb15",
+        "Name": "Sara Wettergren",
+        "Email": "sara.wettergren@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "9e4e32a0-fd7a-4332-8821-ce16ffe04e29",
+          "Name": "Liberalerna"
+        },
+        "ImageLink": "/sv/documents/9f82fb80-493e-4ed5-a6d9-38d98c9f70c9jpg"
+      },
+      {
+        "Id": "017a57b4-78b0-492a-bf1f-af6a0d1db4d8",
+        "Name": "Sedat Arif",
+        "Email": "sedat.arif@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/cd225e24-b37c-4d2d-bcdb-dcb988c63c4cjpg"
+      },
+      {
+        "Id": "afb5ceef-251c-4b9c-a09e-f640a0e5f272",
+        "Name": "Shaip Morina",
+        "Email": "shaip.morina@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/9d0a3a02-a7ae-476f-97af-9ee689147d7fjpg"
+      },
+      {
+        "Id": "a49889d4-e1f2-4433-89ed-d6aaeff9ac97",
+        "Name": "Shler Bradostin",
+        "Email": "shlermurad.bradostin@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/aa4170a3-ca56-47a0-8cae-523fa6c2e94bjpg"
+      },
+      {
+        "Id": "949eeaea-8607-4571-9961-e72c6dcdabdc",
+        "Name": "Sofia Hedén",
+        "Email": "sofia.heden@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/ea768da0-13ee-43a1-be4a-20846d2a0e94jpg"
+      },
+      {
+        "Id": "b324ff75-5001-4eee-a562-78bb717349d2",
+        "Name": "Stefana Hoti",
+        "Email": "Stefana.Hoti@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/cfd4dfa0-aada-4822-bae0-cbf5b95af5f1jpg"
+      },
+      {
+        "Id": "c0288784-6b04-42d3-9183-cd6f623e1e8e",
+        "Name": "Stefan Claesson",
+        "Email": "stefan.claesson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "10dee4f6-991f-4f97-87bb-f59f8e18476f",
+          "Name": "Sverigedemokraterna"
+        },
+        "ImageLink": "/sv/documents/b32134df-5741-44a4-8abe-8cee6e54a736jpg"
+      },
+      {
+        "Id": "b2000f06-a7db-4234-b462-8ca05ee0a8a5",
+        "Name": "Surra Al Sakban",
+        "Email": "surra.alsakban@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "ce225fef-658b-4da0-9700-2d456d3bcc93",
+          "Name": "Miljöpartiet De Gröna"
+        },
+        "ImageLink": "/sv/documents/6296f35f-27a1-4345-a892-0906e54b29a8jpg"
+      },
+      {
+        "Id": "99e55cf5-6d43-4583-b1cd-3be8e7e172f3",
+        "Name": "Susanne Jönsson",
+        "Email": "Susanne.Jonsson6@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/d4cfa9e0-a5de-4ae3-8f6d-3ed4de082f4ejpg"
+      },
+      {
+        "Id": "cd4bf158-4e69-4ce5-921c-ebfd5159599b",
+        "Name": "Sven-Erik Rasmusson",
+        "Email": "sven-erikroland.rasmusson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "a7e181f6-1b24-43ed-804a-97a437df2413",
+          "Name": "Arbetarepartiet Socialdemokraterna"
+        },
+        "ImageLink": "/sv/documents/d2826207-0660-404b-9070-b43d6615d4eajpg"
+      },
+      {
+        "Id": "4bf9c9e6-cc99-4058-9570-5597789e0c92",
+        "Name": "Tobias Petersson",
+        "Email": "tobias.petersson@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "d79928a2-19c1-4a88-a8aa-2c3ddf9e1820",
+          "Name": "Vänsterpartiet"
+        },
+        "ImageLink": "/sv/documents/1159a2fb-d96f-49ad-979f-686437d6e158jpg"
+      },
+      {
+        "Id": "075ed1b2-85a4-4d78-9e85-c7d41557746e",
+        "Name": "Tony Rahm",
+        "Email": "Tony.Rahm@malmo.se",
+        "WorkPhone": null,
+        "PersonalPhone": null,
+        "PoliticalParty": {
+          "Id": "b06f9b2c-b363-456a-bb77-311620622c09",
+          "Name": "Moderaterna"
+        },
+        "ImageLink": "/sv/documents/3ae6dd82-c972-4bdb-a4e4-0757ba111ea8jpg"
+      }
+    ],
+    "TotalItemCount": 93
+  },
+  "roles": [
+    {
+      "RepresentativeId": "d1991c1f-3062-4da9-830d-fa4ac7548468",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 70,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "cd4bf158-4e69-4ce5-921c-ebfd5159599b",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 69,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "bc91342f-2be9-4b07-acb5-8a4d9d1b1e6e",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 68,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "4f2849fd-daa6-4924-8255-649cd893ae12",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 88,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "e4ed8408-250c-4a1c-9b64-4e3d9c66073c",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 50,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "821082aa-ce67-4052-a601-f4170f359150",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 63,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "9891bac6-6ea1-447e-979d-955146c3aa71",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 66,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "afb5ceef-251c-4b9c-a09e-f640a0e5f272",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 67,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "7f4f8664-d875-4d98-b3b8-a606f1c43646",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 65,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a2789854-37cf-4cc2-8520-81a5da8e4c54",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 78,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "23f30630-a794-4fa6-9993-551b9f759359",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 64,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a12f43a0-6e65-47df-bfc0-9eca1b1a31c3",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 71,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "ac638b47-78fa-4e8d-a6e5-50948d9488e2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-09-07",
+      "DateTo": "2026-10-14",
+      "Number": 62,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "ad2fe56d-40a4-4750-a693-b6147a316280",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 85,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "b26a11ac-7c72-4a1b-ab2f-3b915bcfa34b",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 75,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "10e59e37-c218-45d5-be5c-93a72e35037b",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 76,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "976de9a6-c98f-4b61-89eb-af5eb4691a14",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 77,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "2f80a096-78a0-40b9-8557-15c09581116f",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 87,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "4bf9c9e6-cc99-4058-9570-5597789e0c92",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 84,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "6d94772b-4428-4ade-9fdf-081045385c06",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2026-08-28",
+      "DateTo": "2026-10-14",
+      "Number": 86,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "65dbc052-da82-4448-adac-e33aa90d385f",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-09-02",
+      "DateTo": "2026-10-14",
+      "Number": 74,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "ee266fb0-82e2-4505-837f-7efddde08a1f",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-09-02",
+      "DateTo": "2026-10-14",
+      "Number": 73,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "3b584612-f5c6-4325-9229-b6131291ba0f",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-09-02",
+      "DateTo": "2026-10-14",
+      "Number": 72,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "101c67c4-afed-41dd-990d-498e9ff440ba",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2025-09-02",
+      "DateTo": "2026-10-14",
+      "Number": 13,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "d4960123-e994-4975-9c49-5b6c3cbe6c92",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2025-06-05",
+      "DateTo": "2026-10-14",
+      "Number": 15,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "31b57dd2-c1d5-4be6-8842-26f21b6d909b",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-06-05",
+      "DateTo": "2026-10-14",
+      "Number": 94,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "34331c59-4650-4ea2-ba8a-2c216e89f9a1",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-06-05",
+      "DateTo": "2026-10-14",
+      "Number": 93,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a4f08df5-06eb-41ab-9cab-e2a29d2c4468",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-02-03",
+      "DateTo": "2026-10-14",
+      "Number": 90,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "9ead4156-bc4e-46ba-893a-3d641cbe0bd1",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2025-02-03",
+      "DateTo": "2026-10-14",
+      "Number": 89,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "38798a0f-cdc8-4e69-ac55-95097335e400",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2024-11-05",
+      "DateTo": "2026-10-14",
+      "Number": 4,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "aa9642d1-0341-4cbd-b169-3db7d14f77af",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2024-11-05",
+      "DateTo": "2026-10-14",
+      "Number": 45,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "de1dea17-eb11-4ad9-9e82-43ad482d4826",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-12-30",
+      "DateTo": "2026-10-14",
+      "Number": 83,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "feb822f1-6ff0-4f7d-b9ef-501ba28554ad",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-12-02",
+      "DateTo": "2026-10-14",
+      "Number": 41,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "43a61c52-428e-4e66-a61b-843a42f28ea5",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-12-02",
+      "DateTo": "2026-10-14",
+      "Number": 46,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "197d2cd3-5ce3-4b4a-853d-2a4032f7388a",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-11-18",
+      "DateTo": "2026-10-14",
+      "Number": 81,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "992e9c87-2f18-4a8a-9588-d39b84c54324",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-11-18",
+      "DateTo": "2026-10-14",
+      "Number": 82,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "f9910041-78d5-4690-8f7f-7e4107259d58",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-11-17",
+      "DateTo": "2026-10-14",
+      "Number": 92,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "5256575b-0700-4f75-adf9-0148f08670f3",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-11-17",
+      "DateTo": "2026-10-14",
+      "Number": 91,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "9c88fa86-7429-4454-9b95-ce77032bcbf6",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 24,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "80e4b2ce-0a83-40d8-b5f1-ed1808f3c40b",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 16,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "ff30a6ce-9f69-4a81-a5e1-4c0112e5d6fc",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 37,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "eeea691f-5e9d-4338-951c-20ad01113619",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 12,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "212b74c5-1690-4295-9160-7b6e1d42a288",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ordförande",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 14,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "97faa028-2eea-4b7f-9226-60172e065e35",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 38,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "d61429d6-a0a1-4ec4-a35c-a285757ed2dd",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 40,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "075ed1b2-85a4-4d78-9e85-c7d41557746e",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 21,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "132fb10d-5c41-4566-bd02-82a912d1aa73",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 30,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "949eeaea-8607-4571-9961-e72c6dcdabdc",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 20,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "6def4f89-9052-4540-a78f-0c154a5d1dc2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 55,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "99e55cf5-6d43-4583-b1cd-3be8e7e172f3",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 56,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "93ea9222-a9b4-4c9b-94a5-09fe67676ca6",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 35,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "05bff02c-6fe0-48dc-83db-0f720e669bca",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 57,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c99a63ce-c119-4f69-91cd-351133aab3cc",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 7,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "1599d958-ffd2-4654-a0bf-f9cb0043e3f9",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 58,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "017a57b4-78b0-492a-bf1f-af6a0d1db4d8",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 17,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "b324ff75-5001-4eee-a562-78bb717349d2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 25,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "1d8fd054-c92d-4407-aed9-829839ca5404",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 28,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a49889d4-e1f2-4433-89ed-d6aaeff9ac97",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 39,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "b2000f06-a7db-4234-b462-8ca05ee0a8a5",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 43,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "59b723e4-235f-4170-bd52-33ab369da4a2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 26,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "2647b31c-a2f2-427f-91a5-313ef2cd8645",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 11,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "7e25b637-52ff-4a90-9978-035855d43e9e",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 3,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "63f5553e-058f-4a00-9a16-f6cda504ca43",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 10,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "3eb59df0-6725-4a99-92f1-ab8d847ca940",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 8,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "9e578f96-e7b8-4da4-bd7c-56421dbdd0c8",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 79,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "385c8ef4-3c8b-4b91-873e-04e8aaab3916",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 44,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a3494799-c3e6-4c69-a39b-7a23a863ef85",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Vice ordförande",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 42,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "96a55325-9fd0-4dab-b775-93326d51c9e9",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 47,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c754e6e9-8735-429b-b89b-c8e1e41f87dc",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 1,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "dbf5b621-f094-41ef-9595-a3bf9f98f7c2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 23,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c0288784-6b04-42d3-9183-cd6f623e1e8e",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ersättare",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 80,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "daf48514-1b99-4c8e-b517-f99680c2af40",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 53,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "0500f3ac-fe5f-4abf-ad3d-d93c34b46314",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 27,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "43d4a72b-9869-4903-916b-851482e6a85f",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 34,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c1d0c0f3-cc2e-477f-8f39-c34fec13e45a",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 2,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "4df6dbeb-141e-465b-95c3-29c2d2bb06da",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 54,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "16dd7e81-9c4e-4be9-bfc4-795434d2fd05",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 51,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c67e3c02-d886-4637-b36d-621c1b20e1cc",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 31,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "8a33c931-c809-4c80-8aa8-d78759c8da44",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 60,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "98b835ab-0a26-44e6-a111-3ca3ad20055d",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 32,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a4591f57-dd28-410b-bdf2-64f3de9c69bf",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 6,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "5244b237-0261-4979-88f1-c445450e30ed",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 48,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "d46cb654-15f6-43dc-bd6b-6677a34f5e62",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 5,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "c6b49b0f-6954-4e24-9a01-0407399428e1",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 36,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "8dc93c78-721d-4fd9-9e49-fc3b2c805f3a",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 29,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "4f529682-108f-41b9-b55a-e2cf9749bb15",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 49,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "a4cecad6-62f7-4fde-b248-87cea7325fda",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 9,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "8cca2a82-203b-4130-8cdc-449d5ac7d725",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 59,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "257a47db-e3c1-485e-81c3-dee7e47f53b1",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 22,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "ae093f9c-679c-4e6a-a27c-16c2ca0cea19",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 61,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "174aab56-baab-4af1-b6d4-f9339695d8e2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 52,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "98d82d63-e608-4ece-b1b4-84240987866a",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Ledamot",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 33,
+      "State": "Current"
+    },
+    {
+      "RepresentativeId": "de8eddc7-97c9-4f3d-91b1-21baa9210ac2",
+      "Committee": {
+        "Id": 909,
+        "Name": "Kommunfullmäktige",
+        "ShortName": "",
+        "Link": "committees/kommunfullmaktige",
+        "ZipCode": "211 35",
+        "City": "Malmö",
+        "PhoneNumber": "040-34 10 25",
+        "Email": "kansli.kf@malmo.se",
+        "Fax": "",
+        "WebsiteLink": null,
+        "Address": "Kalendegatan 1"
+      },
+      "Role": "Andre vice ordförande",
+      "DateFrom": "2022-10-15",
+      "DateTo": "2026-10-14",
+      "Number": 18,
+      "State": "Current"
+    }
+  ]
+}

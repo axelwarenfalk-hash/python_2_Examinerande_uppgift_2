@@ -1,0 +1,2473 @@
+{
+  "pdf_version": [
+    990897,
+    1790590166546244400
+  ],
+  "status": "processed",
+  "paragraphs": [
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "members": [
+    {
+      "name": "Katrin Stjernfeldt Jammeh",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Farishta Sulaiman",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "name": "Magnus Olsson",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Nina Jakku",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Andréas Schönström",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "John Roslund",
+      "party": "M",
+      "paragraphs": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Frida Trollmyr",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Rickard Åhman Persson",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anders Rubin",
+      "party": "S",
+      "paragraphs": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Roko Kursar",
+      "party": "L",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Josefin Anselmsson",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Carina Nilsson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Sedat Arif",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anja Nordberg Sonesson",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Sofia Hedén",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anders Pripp",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Mubarik Mohamed Abdirahman",
+      "party": "S",
+      "paragraphs": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Boel Pettersson",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "name": "Stefana Hoti",
+      "party": "MP",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Amani Loubani",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Helena Nanne",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Michael Hård af Segerstad",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Linda Eklund",
+      "party": "L",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "name": "Bengt-Göran Svensson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Sadiye Altundal",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Håkan Fäldt",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Jacqueline Maly",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Juan-Tadeo Espitia",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "John Eklöf",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anton Sauer",
+      "party": "C",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anders Skans",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Shler Murad Bradostin",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Haqvin Svensson",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Björn Gudmundsson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Surra Al Sakban",
+      "party": "MP",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "name": "Sanna Axelsson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "name": "Gunilla Ryd",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Malin Ahlström",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Håkan Ask",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Arwin Sohrabi Nejad",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "name": "Sara Wettergren",
+      "party": "L",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Christina Wessling",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Linda Obiedzinski",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anfal Saad Mahdi",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Lisbeth Persson Ekström",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Jan Olsson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Helena Grahn",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Susanne Jönsson",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Anders Andersson",
+      "party": "V",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Dündar Güngör",
+      "party": "S",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "name": "Anders Olin",
+      "party": "SD",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "name": "Janne Grönholm",
+      "party": "MP",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Albin Schyllert",
+      "party": "M",
+      "paragraphs": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    }
+  ],
+  "replacements": [
+    {
+      "name": "Hanna Sandberg",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Anders Rubin",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Katrin Stjernfeldt Jammeh",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Andréas Schönström",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Björn Gudmundsson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Carina Nilsson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Sedat Arif",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Amani Loubani",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Sanna Axelsson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Nadjam-Ud-Din Malik",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Mubarik Mohamed Abdirahman",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Anders Rubin",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Bengt-Göran Svensson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Frida Trollmyr",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Anders Nilsson",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Olga Krivtsova",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Marie Tanndal",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Sedat Arif",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Olga Krivtsova",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Mubarik Mohamed Abdirahman",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Sofia Hedén",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Peter Johansson",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Sofia Hedén",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Shler Murad Bradostin",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Juan-Tadeo Espitia",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Sanna Axelsson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Dündar Güngör",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Amanda Johannesson",
+      "party": "S",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Amani Loubani",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Björn Gudmundsson",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Arwin Sohrabi Nejad",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Arwin Sohrabi Nejad",
+            "party": "S",
+            "title": null
+          },
+          "paragraphs": [
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Ingrid Gunnarson",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "John Roslund",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Helena Nanne",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Håkan Fäldt",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "John Roslund",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Haqvin Svensson",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Farishta Sulaiman",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Bo Mats Brogren",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Farishta Sulaiman",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Josefin Anselmsson",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Helena Grahn",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Darko Simic",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Anja Nordberg Sonesson",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Håkan Fäldt",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Amanda Traneborn",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Helena Nanne",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "John Eklöf",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Niclas Röhr",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Tony Rahm",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Petra Lundgren",
+      "party": "M",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Linda Obiedzinski",
+            "party": "M",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Jenny Bengtsson",
+      "party": "SD",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Lars-Johan Hallgren",
+            "party": "SD",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Stefan Claesson",
+      "party": "SD",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Jörgen Grubb",
+            "party": "SD",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Nichlas Holmgren Gellersten",
+      "party": "SD",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Magnus Olsson",
+            "party": "SD",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Anders Olin",
+            "party": "SD",
+            "title": null
+          },
+          "paragraphs": [
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Lisa Stolpe",
+      "party": "V",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Nina Jakku",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Anders Skans",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Boel Pettersson",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Marek Lakatos",
+      "party": "V",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Carin Gustafsson",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Tobias Petersson",
+      "party": "V",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Showan Shattak",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Kerstin Håkansson",
+      "party": "V",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Anfal Saad Mahdi",
+            "party": "V",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Anna Ljunggren",
+      "party": "MP",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Mohamed Yassin",
+            "party": "MP",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Eva Christina Bertz",
+      "party": "L",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Roko Kursar",
+            "party": "L",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Linda Eklund",
+            "party": null,
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        },
+        {
+          "member": {
+            "name": "Linda Eklund",
+            "party": "L",
+            "title": null
+          },
+          "paragraphs": [
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Joel Laguna Ascacivar",
+      "party": "L",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Sara Wettergren",
+            "party": "L",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Kay Lennart Wictorin",
+      "party": "C",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Emelie Nyman",
+            "party": "C",
+            "title": null
+          },
+          "paragraphs": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "Martin Molin",
+      "party": "C",
+      "title": null,
+      "replaces": [
+        {
+          "member": {
+            "name": "Anton Sauer",
+            "party": "C",
+            "title": null
+          },
+          "paragraphs": [
+            78
+          ],
+          "reason": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "term_start": "2022-10-15",
+  "term_end": "2026-10-14",
+  "as_of": "2026-10-09",
+  "total_meetings": 45,
+  "analyzed_meetings": 43,
+  "excluded_members": [
+    {
+      "name": "Hanna Sandberg",
+      "party": "Arbetarepartiet Socialdemokraterna",
+      "date_from": "2026-09-07"
+    },
+    {
+      "name": "Haqvin Svensson",
+      "party": "Moderaterna",
+      "date_from": "2022-12-02"
+    },
+    {
+      "name": "Kay Wictorin",
+      "party": "Centerpartiet",
+      "date_from": "2025-06-05"
+    },
+    {
+      "name": "Lisa Stolpe",
+      "party": "Vänsterpartiet",
+      "date_from": "2024-11-05"
+    },
+    {
+      "name": "Malin Ahlström",
+      "party": "Moderaterna",
+      "date_from": "2022-12-02"
+    },
+    {
+      "name": "Nicola Rabi",
+      "party": "Moderaterna",
+      "date_from": "2025-09-02"
+    },
+    {
+      "name": "Nina Jakku",
+      "party": "Vänsterpartiet",
+      "date_from": "2024-11-05"
+    }
+  ],
+  "skipped_meetings": [
+    {
+      "date": "2026-09-24",
+      "reason": "Ingen PDF-länk i möteslistan"
+    },
+    {
+      "date": "2024-06-19",
+      "reason": "Närvarodelen saknar maskinläsbar text"
+    }
+  ]
+}
