@@ -4,7 +4,14 @@ LOGGER_NAME = "malmo_council_attendance"
 
 
 def config_logging() -> None:
-    """Aktivera INFO-loggning i terminalen utan att lägga till dubbla logghanterare."""
+    """Aktivera INFO-loggning i terminalen utan att lägga till dubbla logghanterare.
+
+    Args:
+        Inga parametrar.
+
+    Returns:
+        None: Konfigurerar programmets logger och terminalhanterare.
+    """
 
     logger = logging.getLogger(LOGGER_NAME)
     logger.setLevel(logging.INFO)

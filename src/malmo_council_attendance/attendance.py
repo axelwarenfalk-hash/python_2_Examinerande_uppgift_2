@@ -20,7 +20,19 @@ def make_analysis_summary(
     meetings_df: pd.DataFrame, attendance_df: pd.DataFrame, excluded_members: pd.DataFrame,
     term_start: pd.Timestamp, term_end: pd.Timestamp, as_of: pd.Timestamp,
 ) -> dict[str, Any]:
-    """Beskriv analysens urval och varje utelämnat möte för figurernas fotnoter."""
+    """Beskriv analysens urval och varje utelämnat möte för figurernas fotnoter.
+
+    Args:
+        meetings_df (pd.DataFrame): Mötestabell med datum och länkar till möten och protokoll.
+        attendance_df (pd.DataFrame): Närvarotabell med en rad per ledamot och paragraf.
+        excluded_members (pd.DataFrame): Tabell över ledamöter som inte ingår i analysens urval.
+        term_start (pd.Timestamp): Mandatperiodens första datum, inklusive.
+        term_end (pd.Timestamp): Mandatperiodens sista datum, inklusive.
+        as_of (pd.Timestamp): Senaste datum som får ingå i analysen.
+
+    Returns:
+        dict[str, Any]: Period, mötesantal, bortvalda ledamöter och orsaker till utelämnade möten.
+    """
     analyzed_dates = set(pd.to_datetime(attendance_df["date"]).dt.strftime("%Y-%m-%d"))
     skipped = []
     for meeting in meetings_df.itertuples():
@@ -60,7 +72,16 @@ def make_analysis_summary(
 def make_meeting_attendance(
     meeting_date: pd.Timestamp, members_df: pd.DataFrame, reading: dict[str, Any]
 ) -> list[dict[str, Any]]:
-    """Skapa en rad per ledamot och paragraf; egen närvaro prioriteras över ersättning."""
+    """Skapa en rad per ledamot och paragraf; egen närvaro prioriteras över ersättning.
+
+    Args:
+        meeting_date (pd.Timestamp): Datum för det aktuella mötet.
+        members_df (pd.DataFrame): Ledamotstabell med person-id, namn, parti och uppdragsdatum.
+        reading (dict[str, Any]): Tolkad mötesdata med paragrafer, ledamöter och ersättningar.
+
+    Returns:
+        list[dict[str, Any]]: Närvarorader med datum, paragraf, person-id, namn, parti, status och eventuell ersättare.
+    """
     attendance_rows = []
     meeting_paragraphs = reading["paragraphs"]
     members_attendance = reading["members"]
@@ -108,7 +129,19 @@ def build_attendance(
     meetings_cache_path: Path,
     use_cache: bool = True,
 ) -> pd.DataFrame:
-    """Läs möten, uppdatera deras lässtatus och sammanfoga alla närvarorader."""
+    """Läs möten, uppdatera deras lässtatus och sammanfoga alla närvarorader. Ändrar meetings_df genom att sätta read_status och sparar status efter varje möte.
+
+    Args:
+        meetings_df (pd.DataFrame): Mötestabell med datum och länkar till möten och protokoll.
+        members_df (pd.DataFrame): Ledamotstabell med person-id, namn, parti och uppdragsdatum.
+        pdf_dir (Path): Mapp med protokoll namngivna som ÅÅÅÅ-MM-DD.pdf.
+        reading_cache_dir (Path): Mapp för cachade PDF-tolkningar i JSON-format.
+        meetings_cache_path (Path): CSV-fil där mötestabellen och dess lässtatus sparas.
+        use_cache (bool): Om True används befintlig giltig cache; annars hämtas eller läses data om.
+
+    Returns:
+        pd.DataFrame: Alla närvarorader med kolumnerna i ATTENDANCE_COLUMNS; kan vara tom.
+    """
     attendance_rows = []
     meetings_df["read_status"] = "not_processed"
     save_dataframe(meetings_df, meetings_cache_path)

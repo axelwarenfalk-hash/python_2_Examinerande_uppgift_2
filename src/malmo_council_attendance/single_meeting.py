@@ -13,7 +13,17 @@ from .io import read_json, save_json
 logger = logging.getLogger(__name__)
 
 def split_first_member(member: str) -> tuple[dict[str, str | None], str]:
-    """Dela första personens namn, parti och eventuell titel från resten av raden."""
+    """Dela första personens namn, parti och eventuell titel från resten av raden.
+
+    Args:
+        member (str): Textrad som börjar med personens namn, parti och eventuell titel.
+
+    Returns:
+        tuple[dict[str, str | None], str]: Personens name, party och title samt återstående text.
+
+    Raises:
+        ValueError: Om texten saknar förväntade parenteser för parti eller titel.
+    """
 
     name, rest = member.strip().split("(", 1)
     name = name.strip()
@@ -38,11 +48,17 @@ def split_first_member(member: str) -> tuple[dict[str, str | None], str]:
     return structured_member, rest.strip()
 
 def paragraph_interval(paragraph: str) -> list[int] | None:
-    '''
-    Tar en eller flera paragrafintevall i en sträng och returnerar en lista med paragraferna.
-    ex:
-    '§§56-59, §§62-65' --> [56, 57, 58, 59, 62, 63, 64, 65]
-    '''
+    """Utöka paragrafintervall till en lista med enskilda paragrafnummer.
+
+    Args:
+        paragraph (str): Text med paragrafnummer eller intervall, exempelvis §§56–59, §62.
+
+    Returns:
+        list[int] | None: Utökade paragrafnummer i angiven ordning, eller None om paragraftecken saknas.
+
+    Raises:
+        ValueError: Om paragrafnummer eller intervall inte kan tolkas som heltal.
+    """
 
     if '§' not in paragraph:
         return None
@@ -71,7 +87,14 @@ def paragraph_interval(paragraph: str) -> list[int] | None:
 
 
 def remove_page_number(page: Page) -> Page:
-    """Filtrera bort sidans eget nummer i övre högra hörnet före textutvinning."""
+    """Filtrera bort sidans eget nummer i övre högra hörnet före textutvinning.
+
+    Args:
+        page (Page): PDF-sida från pdfplumber.
+
+    Returns:
+        Page: Filtrerad sida om sidnumret hittas; annars den ursprungliga sidan.
+    """
     # Ta bara bort sidans eget nummer i det övre högra hörnet.
     for word in page.extract_words():
         if (
@@ -90,7 +113,14 @@ def remove_page_number(page: Page) -> Page:
 
 
 def get_text_from_pdf(pdf_path: Path) -> list[str] | None:
-    """Läs PDF-rader; returnera None om närvarodelen innehåller oläsbar grafik."""
+    """Läs PDF-rader; returnera None om närvarodelen innehåller oläsbar grafik.
+
+    Args:
+        pdf_path (Path): Sökväg till mötets PDF-protokoll.
+
+    Returns:
+        list[str] | None: Protokollets textrader, eller None om grafik utan läsbar text upptäcks före närvarodelens slut.
+    """
     logger.info('extraherar text från pdf')
     all_lines = []
     attendance_finished = False
@@ -113,7 +143,14 @@ def get_text_from_pdf(pdf_path: Path) -> list[str] | None:
 
 
 def get_meeting_paragraphs(all_lines: list[str]) -> list[int] | None:
-    """Hämta paragrafnumren från raden som anger vad protokollet omfattar."""
+    """Hämta paragrafnumren från raden som anger vad protokollet omfattar.
+
+    Args:
+        all_lines (list[str]): Protokollets extraherade textrader i läsordning.
+
+    Returns:
+        list[int] | None: Protokollets paragrafnummer, [] om omfattningsraden saknas eller None om raden saknar paragraftecken.
+    """
     logger.info('Hämtar mötets paragrafer')
     for line in all_lines:
         lower = line.lower()
@@ -122,11 +159,21 @@ def get_meeting_paragraphs(all_lines: list[str]) -> list[int] | None:
             meeting_paragraphs = paragraph_interval(meeting_paragraphs)
 
             return meeting_paragraphs
-        
+
     return []
 
 def get_attendance_lines(all_lines: list[str]) -> list[str]:
-    """Hämta närvarodelen mellan dess rubriker; avbryt om slutrubriken saknas."""
+    """Hämta närvarodelen mellan dess rubriker; avbryt om slutrubriken saknas.
+
+    Args:
+        all_lines (list[str]): Protokollets extraherade textrader i läsordning.
+
+    Returns:
+        list[str]: Närvarodelens rader utan rubriker, tomma rader och rena sidnummer.
+
+    Raises:
+        ValueError: Om ett fullständigt närvaroavsnitt med slutrubrik inte hittas.
+    """
     attendance_lines = []
     in_section = False
 
@@ -145,7 +192,14 @@ def get_attendance_lines(all_lines: list[str]) -> list[str]:
 
 
 def attendance_row_is_complete(row: str) -> bool:
-    """Kontrollera om en personpost ser komplett ut innan nästa person börjar."""
+    """Kontrollera om en personpost ser komplett ut innan nästa person börjar.
+
+    Args:
+        row (str): Sammanfogad textrad för en ledamot eller ersättare.
+
+    Returns:
+        bool: True om raden enligt formatkontrollen kan avslutas före nästa personpost.
+    """
     if "ersätter" in row.lower():
         # Den sista ersatta personen ska ha ett namn och en partibeteckning.
         last_member = re.split("ersätter", row, flags=re.IGNORECASE)[-1]
@@ -168,7 +222,17 @@ def attendance_row_is_complete(row: str) -> bool:
 
 
 def merge_attendance_lines(attendance_lines: list[str]) -> list[str]:
-    """Slå ihop radbrutna personposter och rätta kända parentes- och kommafel."""
+    """Slå ihop radbrutna personposter och rätta kända parentes- och kommafel.
+
+    Args:
+        attendance_lines (list[str]): Textrader från avsnittet för beslutande ledamöter.
+
+    Returns:
+        list[str]: Kompletta personposter med radbrytningar sammanfogade och kända skrivfel rättade.
+
+    Raises:
+        ValueError: Om en personpost är ofullständig eller en radbrytning är tvetydig.
+    """
     person_rows = []
     current_row = ""
     person_start = r"^[^()\d§,]+\([A-Za-zÅÄÖåäö-]+\)"
@@ -207,7 +271,17 @@ def merge_attendance_lines(attendance_lines: list[str]) -> list[str]:
 
 
 def get_attendance_sections(all_lines: list[str]) -> tuple[list[str], list[str]]:
-    """Returnera sammanfogade ledamotsrader och ersättarrader var för sig."""
+    """Returnera sammanfogade ledamotsrader och ersättarrader var för sig.
+
+    Args:
+        all_lines (list[str]): Protokollets extraherade textrader i läsordning.
+
+    Returns:
+        tuple[list[str], list[str]]: Sammanfogade ledamotsrader respektive ersättarrader.
+
+    Raises:
+        ValueError: Om närvaroavsnittet saknas eller personraderna inte kan sammanfogas entydigt.
+    """
     logger.info("Hämtar mötets närvarolista")
     attendance_lines = get_attendance_lines(all_lines)
     person_rows = merge_attendance_lines(attendance_lines)
@@ -226,8 +300,16 @@ def get_attendance_sections(all_lines: list[str]) -> tuple[list[str], list[str]]
 def structure_members_section(
     members_section: list[str], meeting_paragraphs: list[int]
 ) -> list[dict[str, Any]]:
-    """Koppla ledamöternas namn och parti till paragrafer; inga angivna betyder alla."""
-    
+    """Koppla ledamöternas namn och parti till paragrafer; inga angivna betyder alla.
+
+    Args:
+        members_section (list[str]): Sammanfogade personrader för närvarande ordinarie ledamöter.
+        meeting_paragraphs (list[int]): Samtliga paragrafnummer som protokollet omfattar.
+
+    Returns:
+        list[dict[str, Any]]: Ledamöternas namn, parti och närvaroparagrafer. Saknat intervall betyder alla mötets paragrafer.
+    """
+
     voting_members_dicts = []
 
     for member_row in members_section:
@@ -252,7 +334,15 @@ def structure_members_section(
 def structure_replacements_section(
     replacements_section: list[str], meeting_paragraphs: list[int]
 ) -> list[dict[str, Any]]:
-    """Tolka vem varje ersättare ersätter, under vilka paragrafer och eventuell jävorsak."""
+    """Tolka vem varje ersättare ersätter, under vilka paragrafer och eventuell jävorsak.
+
+    Args:
+        replacements_section (list[str]): Sammanfogade personrader som beskriver ersättningar.
+        meeting_paragraphs (list[int]): Samtliga paragrafnummer som protokollet omfattar.
+
+    Returns:
+        list[dict[str, Any]]: Ersättarnas personuppgifter och replaces-poster med ersatt person, paragrafer och eventuell jävorsak.
+    """
 
     voting_extras_dict = []
 
@@ -303,7 +393,17 @@ def structure_replacements_section(
 
 
 def read_meeting(pdf_path: Path) -> dict[str, Any]:
-    """Tolka ett protokoll och returnera lässtatus samt närvarodata om det lyckas."""
+    """Tolka ett protokoll och returnera lässtatus samt närvarodata om det lyckas.
+
+    Args:
+        pdf_path (Path): Sökväg till mötets PDF-protokoll.
+
+    Returns:
+        dict[str, Any]: status är processed, unreadable_text eller missing_paragraphs. Vid processed ingår paragraphs, members och replacements.
+
+    Raises:
+        ValueError: Om närvarodelen eller dess personposter inte kan tolkas.
+    """
     pdf_text = get_text_from_pdf(pdf_path)
     if pdf_text is None:
         return {"status": "unreadable_text"}
@@ -321,7 +421,16 @@ def read_meeting(pdf_path: Path) -> dict[str, Any]:
 
 
 def load_meeting_reading(pdf_path: Path, cache_dir: Path, use_cache: bool = True) -> dict[str, Any]:
-    """Återanvänd PDF-tolkning om filstorlek och ändringstid matchar, annars läs om."""
+    """Återanvänd PDF-tolkning om filstorlek och ändringstid matchar, annars läs om. Nya tolkningar sparas i cache även när use_cache är False.
+
+    Args:
+        pdf_path (Path): Sökväg till mötets PDF-protokoll.
+        cache_dir (Path): Mapp där PDF-tolkningar sparas som JSON.
+        use_cache (bool): Om True används befintlig giltig cache; annars hämtas eller läses data om.
+
+    Returns:
+        dict[str, Any]: Lässtatus och eventuell närvarodata samt pdf_version för befintliga filer; saknad PDF ger status missing_pdf.
+    """
     if not pdf_path.exists():
         logger.info("%s finns inte", pdf_path.name)
         return {"status": "missing_pdf"}

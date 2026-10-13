@@ -22,9 +22,9 @@ def test_main_connects_stages_and_returns_saved_attendance():
         patch.object(app, "save_dataframe") as save,
     ):
         assert app.main() is attendance
-    council.assert_called_once_with(app.council_cache_path, app.use_council_cache)
-    meeting_loader.assert_called_once_with(app.meetings_cache_path, app.use_meetings_cache)
-    download.assert_called_once_with(meetings, app.pdf_dir)
-    build.assert_called_once_with(meetings, members, app.pdf_dir, app.reading_cache_dir,
-                                  app.analysis_meetings_path, app.use_reading_cache)
-    save.assert_called_once_with(attendance, app.attendance_path)
+    council.assert_called_once_with(app.ReportConfig.council_cache_path, app.ReportConfig.use_council_cache)
+    meeting_loader.assert_called_once_with(app.ReportConfig.meetings_cache_path, app.ReportConfig.use_meetings_cache)
+    download.assert_called_once_with(meetings, app.ReportConfig.pdf_dir)
+    build.assert_called_once_with(meetings, members, app.ReportConfig.pdf_dir, app.ReportConfig.reading_cache_dir,
+                                  app.ReportConfig.analysis_meetings_path, app.ReportConfig.use_reading_cache)
+    save.assert_called_once_with(attendance, app.ReportConfig.attendance_path)

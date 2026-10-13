@@ -16,7 +16,15 @@ logger = logging.getLogger(__name__)
 def select_members_from_term_start(
     members_df: pd.DataFrame, term_start: pd.Timestamp
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Behåll nu listade ledamöter vars registrerade uppdrag omfattar mandatperiodens start."""
+    """Behåll nu listade ledamöter vars registrerade uppdrag omfattar mandatperiodens start.
+
+    Args:
+        members_df (pd.DataFrame): Ledamotstabell med person-id, namn, parti och uppdragsdatum.
+        term_start (pd.Timestamp): Mandatperiodens första datum, inklusive.
+
+    Returns:
+        tuple[pd.DataFrame, pd.DataFrame]: Kopior av inkluderade respektive bortvalda ledamöter.
+    """
     starts = pd.to_datetime(members_df["date_from"])
     ends = pd.to_datetime(members_df["date_to"])
     included = starts.le(term_start) & (ends.isna() | ends.ge(term_start))
@@ -24,7 +32,14 @@ def select_members_from_term_start(
 
 
 def make_all_representatives_dataframe(json_data: dict[str, Any]) -> pd.DataFrame:
-    """Plocka ut personernas id, namn och parti från API-svaret."""
+    """Plocka ut personernas id, namn och parti från API-svaret.
+
+    Args:
+        json_data (dict[str, Any]): API-svar med personlistan i nyckeln Items.
+
+    Returns:
+        pd.DataFrame: Person-id, namn, partinamn och parti-id för varje person.
+    """
     all_representatives_df = pd.json_normalize(json_data["Items"], sep="_")
 
     all_representatives_df = all_representatives_df[
@@ -48,7 +63,14 @@ def make_all_representatives_dataframe(json_data: dict[str, Any]) -> pd.DataFram
 
 
 def make_all_roles_dataframe(json_data: list[dict[str, Any]]) -> pd.DataFrame:
-    """Skapa rolltabellen och omvandla uppdragens start- och slutdatum."""
+    """Skapa rolltabellen och omvandla uppdragens start- och slutdatum.
+
+    Args:
+        json_data (list[dict[str, Any]]): Lista med API-poster för personernas uppdrag.
+
+    Returns:
+        pd.DataFrame: Person-id, roll, uppdragsdatum, fullmäktigenummer och status.
+    """
     all_roles_df = pd.json_normalize(json_data, sep="_")
 
     all_roles_df = all_roles_df[
@@ -71,7 +93,7 @@ def make_all_roles_dataframe(json_data: list[dict[str, Any]]) -> pd.DataFrame:
         'State': 'state'
 
     })
-    
+
     all_roles_df["date_from"] = pd.to_datetime(all_roles_df["date_from"])
     all_roles_df["date_to"] = pd.to_datetime(all_roles_df["date_to"])
 
@@ -82,7 +104,15 @@ def make_all_roles_dataframe(json_data: list[dict[str, Any]]) -> pd.DataFrame:
 def merge_all_representatives_with_all_roles(
     df_all_representatives: pd.DataFrame, roles_df: pd.DataFrame
 ) -> pd.DataFrame:
-    """Koppla roller till person-id och behåll även personer utan matchande roll."""
+    """Koppla roller till person-id och behåll även personer utan matchande roll.
+
+    Args:
+        df_all_representatives (pd.DataFrame): Tabell över personer; vid uppdelning krävs även council_number.
+        roles_df (pd.DataFrame): Rolltabell med person-id, uppdrag och uppdragsdatum.
+
+    Returns:
+        pd.DataFrame: Personuppgifter kopplade till roller; flera roller kan ge flera rader per person.
+    """
     merged_df = df_all_representatives.merge(
         roles_df,
         on='representative_id',
@@ -99,7 +129,14 @@ def merge_all_representatives_with_all_roles(
 
 
 def separate_members_from_replacements(df_all_representatives: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Returnera ledamöter med nummer 1–61 och övriga som ersättare."""
+    """Returnera ledamöter med nummer 1–61 och övriga som ersättare.
+
+    Args:
+        df_all_representatives (pd.DataFrame): Tabell över personer; vid uppdelning krävs även council_number.
+
+    Returns:
+        tuple[pd.DataFrame, pd.DataFrame]: Ledamöter respektive ersättare, sorterade efter fullmäktigenummer.
+    """
 
     is_member = df_all_representatives["council_number"].between(1, 61)
 
@@ -118,7 +155,18 @@ def separate_members_from_replacements(df_all_representatives: pd.DataFrame) -> 
 
 
 def load_council(cache_path: Path, use_cache: bool = True) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Läs API-data eller cache och returnera tabeller för ledamöter och ersättare."""
+    """Läs API-data eller cache och returnera tabeller för ledamöter och ersättare.
+
+    Args:
+        cache_path (Path): Sökväg till funktionens cachefil.
+        use_cache (bool): Om True används befintlig giltig cache; annars hämtas eller läses data om.
+
+    Returns:
+        tuple[pd.DataFrame, pd.DataFrame]: Tabeller för ledamöter respektive ersättare. Rådata sparas i cachefilen.
+
+    Raises:
+        TypeError: Om persondata inte är en ordbok eller rolldata inte är en lista.
+    """
     if use_cache and cache_path.exists():
         data = read_json(cache_path)
         logger.info("Läser rådets grunddata från cache")

@@ -46,7 +46,14 @@ STATUSES = ["present", "absent_with_replacement", "absent_without_replacement"]
 
 
 def make_plot_footer(analysis_summary: dict[str, Any]) -> str:
-    """Beskriv urval, bortvalda personer och orsaker till oanalyserade möten."""
+    """Beskriv urval, bortvalda personer och orsaker till oanalyserade möten.
+
+    Args:
+        analysis_summary (dict[str, Any]): Analysmetadata med period, mötesantal, bortvalda personer och utelämnade möten.
+
+    Returns:
+        str: Radbruten fotnot med urval, datakällor och begränsningar.
+    """
     excluded = [
         f"{person['name']} ({PARTY_LABELS.get(person['party'], person['party'])})"
         for person in analysis_summary["excluded_members"]
@@ -64,7 +71,18 @@ def make_plot_footer(analysis_summary: dict[str, Any]) -> str:
 
 
 def summarize_attendance(attendance_df: pd.DataFrame, group_columns: list[str]) -> pd.DataFrame:
-    """Räkna andelar av ledamot–paragraf-rader, inte andelar av möten."""
+    """Räkna andelar av ledamot–paragraf-rader, inte andelar av möten.
+
+    Args:
+        attendance_df (pd.DataFrame): Närvarotabell med en rad per ledamot och paragraf.
+        group_columns (list[str]): Kolumner att gruppera på, exempelvis party eller person-id, namn och parti.
+
+    Returns:
+        pd.DataFrame: Gruppkolumner, procentandel per status och observations som antal ledamot–paragraf-rader.
+
+    Raises:
+        ValueError: Om tabellen är tom, grupp eller status saknas, eller en status är okänd.
+    """
     if attendance_df.empty:
         raise ValueError("Närvarotabellen är tom")
     if attendance_df[group_columns + ["status"]].isna().any().any():
@@ -82,7 +100,19 @@ def summarize_attendance(attendance_df: pd.DataFrame, group_columns: list[str]) 
 def summarize_meeting_attendance(
     attendance_df: pd.DataFrame, group_columns: list[str], presence_first: bool = True,
 ) -> pd.DataFrame:
-    """Räkna varje ledamot en gång per möte och kategori, oavsett antal paragrafer."""
+    """Räkna varje ledamot en gång per möte och kategori, oavsett antal paragrafer.
+
+    Args:
+        attendance_df (pd.DataFrame): Närvarotabell med en rad per ledamot och paragraf.
+        group_columns (list[str]): Kolumner att gruppera på, exempelvis party eller person-id, namn och parti.
+        presence_first (bool): Om True prioriteras egen närvaro framför ersättning per möte. Annars kan kategorierna överlappa.
+
+    Returns:
+        pd.DataFrame: Gruppkolumner, procentandel per möteskategori och observations som antal ledamot–möten.
+
+    Raises:
+        ValueError: Om tabellen är tom, status är okänd eller datum eller personuppgifter saknas.
+    """
     if attendance_df.empty or not attendance_df["status"].isin(STATUSES).all():
         raise ValueError("Närvarotabellen är tom eller innehåller okänd status")
     keys = ["date", "representative_id", "member", "party"]
@@ -113,7 +143,20 @@ def save_attendance_plot(
     footer: str,
     per_meeting: bool = False,
 ) -> None:
-    """Spara staplar; möteskategorier kan överlappa och summera till mer än 100 %."""
+    """Spara staplar; möteskategorier kan överlappa och summera till mer än 100 %.
+
+    Args:
+        summary (pd.DataFrame): Sammanställning med parti och procentandelar för de tre närvarostatusarna.
+        labels (list[str]): Etiketter för staplarna, i samma ordning som sammanställningens rader.
+        title (str): Diagrammets huvudrubrik.
+        subtitle (str): Underrubrik med exempelvis tidsperiod och mötesantal.
+        output_path (Path): Basnamn för diagramfilerna; filändelsen ersätts med .png respektive .svg.
+        footer (str): Fotnot med analysens urval och begränsningar.
+        per_meeting (bool): Om True används mötesandelar; annars används andelar av ledamot–paragraf-rader.
+
+    Returns:
+        None: Sparar diagrammet som PNG och SVG och stänger figuren.
+    """
     colors = [PARTY_COLORS.get(party, "#777777") for party in summary["party"]]
     darker_colors = [tuple(component * 0.55 for component in to_rgb(color)) for color in colors]
     positions = range(len(summary))
@@ -172,7 +215,18 @@ def create_attendance_plots(
     output_dir: Path = Path("data/plots"), per_meeting: bool = False,
     presence_first: bool = True,
 ) -> None:
-    """Spara staplade PNG- och SVG-diagram per ledamot och parti från närvarotabellen."""
+    """Spara staplade PNG- och SVG-diagram per ledamot och parti från närvarotabellen.
+
+    Args:
+        attendance_df (pd.DataFrame): Närvarotabell med en rad per ledamot och paragraf.
+        analysis_summary (dict[str, Any]): Analysmetadata med period, mötesantal, bortvalda personer och utelämnade möten.
+        output_dir (Path): Mapp där de skapade filerna sparas.
+        per_meeting (bool): Om True används mötesandelar; annars används andelar av ledamot–paragraf-rader.
+        presence_first (bool): Om True prioriteras egen närvaro framför ersättning per möte. Annars kan kategorierna överlappa.
+
+    Returns:
+        None: Sparar diagram per ledamot och parti som PNG och SVG i output_dir.
+    """
     if per_meeting:
         members = summarize_meeting_attendance(attendance_df, ["representative_id", "member", "party"], presence_first)
         parties = summarize_meeting_attendance(attendance_df, ["party"], presence_first)
@@ -210,7 +264,14 @@ def create_attendance_plots(
 
 
 def main() -> None:
-    """Läs den sparade närvarotabellen och skapa figurer utan ny datainsamling."""
+    """Läs den sparade närvarotabellen och skapa figurer utan ny datainsamling.
+
+    Args:
+        Inga parametrar.
+
+    Returns:
+        None: Läser sparade analysdata och skapar diagram per paragraf och per möte i data/plots.
+    """
     attendance_df = read_dataframe(Path("data/attendance.csv"))
     analysis_summary = read_json(Path("data/analysis_summary.json"))
     create_attendance_plots(attendance_df, analysis_summary)

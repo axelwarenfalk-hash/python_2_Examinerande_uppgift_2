@@ -12,7 +12,7 @@ from malmo_council_attendance.config import ReportConfig
 def cached_app(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     for flag in ("use_council_cache", "use_meetings_cache", "use_reading_cache"):
-        monkeypatch.setattr(app, flag, True)
+        monkeypatch.setattr(ReportConfig, flag, True)
     pdf_dir = tmp_path / "data/pdfs"
     pdf_dir.mkdir(parents=True)
     pdf_path = pdf_dir / "2024-01-01.pdf"
@@ -48,7 +48,7 @@ def test_second_run_uses_cache_and_saves_same_attendance(cached_app):
     assert api.call_count == 2
     assert html.call_count == 2
     assert read_pdf.call_count == 1
-    saved = pd.read_csv(app.attendance_path, parse_dates=["date"])
+    saved = pd.read_csv(app.ReportConfig.attendance_path, parse_dates=["date"])
     assert saved["status"].tolist() == ["present", "present"]
     assert saved["paragraph"].tolist() == [1, 2]
 
@@ -61,7 +61,7 @@ def test_second_run_uses_cache_and_saves_same_attendance(cached_app):
 def test_flags_refresh_only_the_selected_stage(cached_app, monkeypatch, flag, expected_calls):
     api, html, read_pdf, _ = cached_app
     app.main()
-    monkeypatch.setattr(app, flag, False)
+    monkeypatch.setattr(ReportConfig, flag, False)
     app.main()
     assert (api.call_count, html.call_count, read_pdf.call_count) == expected_calls
 
@@ -80,5 +80,5 @@ def test_unreadable_pdf_keeps_status_when_cached(cached_app):
     assert app.main().empty
     assert app.main().empty
     assert read_pdf.call_count == 1
-    meetings = pd.read_csv(app.analysis_meetings_path)
+    meetings = pd.read_csv(app.ReportConfig.analysis_meetings_path)
     assert meetings["read_status"].tolist() == ["unreadable_text"]
